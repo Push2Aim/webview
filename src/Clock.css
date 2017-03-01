@@ -1,95 +1,80 @@
 .wrapper {
-    position: relative;
-    margin: 40px auto;
-    background: #F5545B;
-    background-image: url(https://scontent.fmuc2-1.fna.fbcdn.net/v/t1.0-9/15032694_1150845078343525_306152533808879065_n.png?oh=fafc0911335529b0fca09f2fcea59af1&oe=5944D25D);
-    background-size: 250px 250px;
-    background-position-x: 50%;
-    background-position-y: 50%;
-    border-radius: 100%;
-    background-repeat: no-repeat;
-}
+  position: relative;
+  margin: auto;
+  background-image: url(https://scontent.fmuc2-1.fna.fbcdn.net/v/t1.0-9/15032694_1150845078343525_306152533808879065_n.png?oh=fafc0911335529b0fca09f2fcea59af1&oe=5944D25D);
+  background-position-x: 50%;
+  background-position-y: 50%;
+  border-radius: 100%;
+  background-repeat: no-repeat; }
 
 .wrapper, .wrapper * {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 .wrapper {
-    width: 250px;
-    height: 250px;
-}
+  width: 90vh;
+  height: 90vh;
+  max-height: 100vh;
+  background-size: 90vh 90vh;
+  background-color: #F5545B; }
 
 .wrapper .pie {
-    width: 50%;
-    height: 100%;
-    transform-origin: 100% 50%;
-    position: absolute;
-    border: 8px solid #333333;
-}
+  width: 50%;
+  height: 100%;
+  transform-origin: 100% 50%;
+  position: absolute;
+  border: 3vh solid #333333; }
 
 .wrapper {
-    animation: size 5s cubic-bezier(0.86, 0, 0.07, 1) 1 forwards;
-}
+  animation: size 5s cubic-bezier(0.86, 0, 0.07, 1) 1 forwards; }
 
 .wrapper .spinner {
-    border-radius: 100% 0 0 100% / 50% 0 0 50%;
-    z-index: 200;
-    border-right: none;
-    animation: rota 5s linear 1 forwards;
-}
+  border-radius: 100% 0 0 100% / 50% 0 0 50%;
+  z-index: 200;
+  border-right: none;
+  animation: rota 5s linear 1 forwards; }
 
 .wrapper:hover .wrapper,
 .wrapper:hover .spinner,
 .wrapper:hover .filler,
 .wrapper:hover .mask {
-    animation-play-state: running;
-}
+  animation-play-state: running; }
 
 .wrapper .filler {
-    border-radius: 0 100% 100% 0 / 0 50% 50% 0;
-    left: 50%;
-    opacity: 0;
-    z-index: 100;
-    animation: opa 5s steps(1, end) 1 reverse forwards;
-    border-left: none;
-}
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+  left: 50%;
+  opacity: 0;
+  z-index: 100;
+  animation: opa 5s steps(1, end) 1 reverse forwards;
+  border-left: none; }
 
 .wrapper .mask {
-    border-radius: 100% 0% 0% 100% / 50% 50% 50% 50%;
-    right: 50%;
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    background: inherit;
-    opacity: 1;
-    z-index: 300;
-    animation: opa 5s steps(1, end) 1 forwards;
-    background-position-x: 0%;
-}
+  border-radius: 100% 0% 0% 100% / 50% 50% 50% 50%;
+  right: 50%;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  opacity: 1;
+  z-index: 300;
+  animation: opa 5s steps(1, end) 1 forwards;
+  background-position-x: 0%; }
 
 @keyframes rota {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 @keyframes opa {
-    0% {
-        opacity: 1;
-    }
-    50%, 100% {
-        opacity: 0;
-    }
-}
+  0% {
+    opacity: 1; }
+  50%, 100% {
+    opacity: 0; } }
 @keyframes size {
-    50% ,100% {
-        background-size: 250px 250px;
-    }
-    75% {
-        background-size: 100px 100px;
-    }
-}
+  50% ,100% {
+    background-size: 90vh 90vh; }
+  75% {
+    background-size: 100px 100px; } }
+
+/*# sourceMappingURL=Clock.css.map */
