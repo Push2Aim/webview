@@ -6,16 +6,16 @@ body{
 }
 
 .WebViewer{
-    /*font-size: 10vh;*/
     /*width: 50%;*/
     /*height: 100vh;*/
     margin: auto;
+    font-size: 6vh;
 }
 
 button {
     height: 18.23vh;
     width: 20vw;
-    font-size: 10vh;
+    font-size: 8vh;
     color: white;
     background-color: mediumblue;
     border-radius: 50px;
@@ -46,10 +46,6 @@ button {
     width: 9.71vw;
     min-width: 29.71vh;
 }
-.utilities{
-    width: 30vw;
-}
-
 
 p, .intro_rectangle{
     background: #FFFFFF;
@@ -62,7 +58,7 @@ p, .intro_rectangle{
     filter: alpha(opacity=75) progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
 
     padding: 1%;
-    font-size: 10vh;
+    /*font-size: 10vh;*/
 }
 
 body, .gradient {

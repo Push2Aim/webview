@@ -1,10 +1,28 @@
 .ViewAMRAPInfo img{
+    float: left;
     height: 80vh;
+    margin-left: 2vw;
+    margin-top: 7vh;
 }
 
 .ViewAMRAPInfo p{
-    float: right;
+    /*float: right;*/
     margin: auto;
     width: 32.3vw;
+    margin-top: 7.98vh;
+    margin-bottom: 5.11vw;
+    position: relative;
 }
+.ViewAMRAPInfo button{
+    /*float: right;*/
+    margin: auto;
+    width: 15.8vw;
+}
+
+.ViewAMRAPInfo .util{
+    float: right;
+    margin: auto;
+    margin-right: 2vw;
+}
+
 
