@@ -1,3 +1,13 @@
+@import url(//db.onlinewebfonts.com/c/35321a782a3cbb7f9cc0353450a7145e?family=Helvetica+Neue);
+@font-face {font-family: "Helvetica Neue LT";
+    src: url("//db.onlinewebfonts.com/t/35321a782a3cbb7f9cc0353450a7145e.eot");
+    src: url("//db.onlinewebfonts.com/t/35321a782a3cbb7f9cc0353450a7145e.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/35321a782a3cbb7f9cc0353450a7145e.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/35321a782a3cbb7f9cc0353450a7145e.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/35321a782a3cbb7f9cc0353450a7145e.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/35321a782a3cbb7f9cc0353450a7145e.svg#Helvetica Neue") format("svg");
+}
+
 img{
     max-height: 100%;
 }
@@ -10,6 +20,7 @@ body{
     /*height: 100vh;*/
     margin: auto;
     font-size: 6vh;
+    font-family: "Helvetica Neue LT";
 }
 
 button {
@@ -17,8 +28,9 @@ button {
     width: 20vw;
     font-size: 8vh;
     color: white;
-    background-color: mediumblue;
+    background-color: #0084fe;
     border-radius: 50px;
+    border-style: none;
 }
 .btn-left{
     border-top-right-radius: 0px;
@@ -57,6 +69,7 @@ p, .intro_rectangle{
     -ms-filter: alpha(opacity=75) progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     filter: alpha(opacity=75) progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
 
+    color: #282828;
     padding: 1%;
     /*font-size: 10vh;*/
 }
