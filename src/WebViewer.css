@@ -20,8 +20,16 @@ button {
     background-color: mediumblue;
     border-radius: 50px;
 }
+.btn-left{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.btn-right{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
 
-.intro_rectangle{
+p, .intro_rectangle{
     background: #FFFFFF;
     background: rgba(255,255,255,1);
     opacity: 0.75;
@@ -30,6 +38,9 @@ button {
     -webkit-border-radius: 25px;
     -ms-filter: alpha(opacity=75) progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     filter: alpha(opacity=75) progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+
+    padding: 1%;
+    font-size: 10vh;
 }
 
 body, .gradient {

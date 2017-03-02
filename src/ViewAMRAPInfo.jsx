@@ -1,14 +1,14 @@
 import React, {Component} from "react";
-// import "./ViewText.css";
+import "./ViewAMRAPInfo.css";
 
 class ViewAMRAPInfo extends Component {
     render() {
         return (
-            <div className="ViewAMRAP_info">
-                <p>{this.props.text}</p>
+            <div className="ViewAMRAPInfo">
                 <img src={this.props.image} role="presentation"/>
-                <button>start</button>
-                <button>help</button>
+                <p>{this.props.text}</p>
+                <button className="btn-left">start</button>
+                <button className="btn-right">help</button>
             </div>
         );
     }
