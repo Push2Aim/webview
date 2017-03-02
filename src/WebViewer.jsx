@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import ViewText from "./ViewText.jsx";
 import ViewStretch from "./ViewStretch.jsx";
-import ViewAMRAP_info from "./ViewAMRAP-info.jsx";
+import ViewAMRAPInfo from "./ViewAMRAPInfo.jsx";
 import ViewAMRAP from "./ViewAMRAP.jsx";
 import ViewTrophy from "./ViewTrophy.jsx";
 import config from "./config";
@@ -11,7 +11,7 @@ class WebViewer extends Component {
     constructor(props, context) {
         super(props, context);
         this.state = {
-            mIndex: 0
+            mIndex: 1
         }
     }
 
@@ -36,7 +36,7 @@ class WebViewer extends Component {
             case 2:
                 return <ViewStretch image={message.imageUrl} duration={message.duration}/>;
             case 3:
-                return <ViewAMRAP_info text={message.speech} image={message.imageUrl} />;
+                return <ViewAMRAPInfo text={message.speech} image={message.imageUrl} />;
             case 4:
                 return <ViewAMRAP text={message.speech} image={message.imageUrl} />;
             case 5:

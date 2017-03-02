@@ -1,4 +1,4 @@
-p {
+.ViewTrophy p {
     font-size: 10vh;
     margin: auto;
     margin-bottom: 10.18vh;
@@ -7,7 +7,7 @@ p {
     padding: 1%;
 }
 
-img{
+.ViewTrophy img{
     height: 39.03vh;
     margin-top: 7.58vh;
     margin-bottom: -1%;

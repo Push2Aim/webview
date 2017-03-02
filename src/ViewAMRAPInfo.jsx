@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 // import "./ViewText.css";
 
-class ViewAMRAP_info extends Component {
+class ViewAMRAPInfo extends Component {
     render() {
         return (
             <div className="ViewAMRAP_info">
@@ -14,4 +14,4 @@ class ViewAMRAP_info extends Component {
     }
 }
 
-export default ViewAMRAP_info;
+export default ViewAMRAPInfo;

@@ -4,7 +4,7 @@ import "./Clock.css";
 class Clock extends Component {
     render() {
         return (
-            <div className="wrapper"
+            <div className="wrapper Clock"
                  style={{animation: "size " + this.props.duration + "s cubic-bezier(0.86, 0, 0.07, 1) 1 forwards"}}>
                 <div className="pie spinner"
                      style={{animation: "rota " + this.props.duration + "s linear 1 forwards"}}></div>

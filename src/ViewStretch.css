@@ -1,0 +1,20 @@
+.ViewStretch .Clock{
+    float: left;
+    margin-left: 8.62vw;
+    margin-top: 13.23vh;
+    height: 44.54vh;
+    width: 44.54vh;
+}
+
+.ViewStretch button{
+    float: left;
+    margin-right: 8.62vw;
+    margin-top: 13.23vh;
+    position: absolute;
+}
+
+.ViewStretch img{
+    margin: auto;
+    margin-top: 10vh;
+    height: 80vh;
+}

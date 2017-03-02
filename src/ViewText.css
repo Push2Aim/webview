@@ -1,4 +1,4 @@
-p {
+.ViewText p {
     font-size: 10vh;
     margin: auto;
     margin-top: 10.54vh;
@@ -6,13 +6,4 @@ p {
     width: 61.29vw;
     min-height: 44.55vh;
     padding: 1%;
-}
-
-button {
-    height: 18.23vh;
-    width: 20vw;
-    font-size: 10vh;
-    color: white;
-    background-color: mediumblue;
-    border-radius: 50px;
 }

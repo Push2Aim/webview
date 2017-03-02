@@ -4,11 +4,21 @@ img{
 body{
     /*overflow: hidden;*/
 }
+
 .WebViewer{
     /*font-size: 10vh;*/
     /*width: 50%;*/
     /*height: 100vh;*/
     margin: auto;
+}
+
+button {
+    height: 18.23vh;
+    width: 20vw;
+    font-size: 10vh;
+    color: white;
+    background-color: mediumblue;
+    border-radius: 50px;
 }
 
 .intro_rectangle{

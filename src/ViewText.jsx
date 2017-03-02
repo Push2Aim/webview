@@ -4,7 +4,7 @@ import "./ViewText.css";
 class ViewText extends Component {
     render() {
         return (
-            <div className="TextViewer">
+            <div className="ViewText">
                 <p className="intro_rectangle">{this.props.text}</p>
                 <button>start</button>
             </div>

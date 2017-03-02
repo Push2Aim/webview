@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import Clock from "./Clock";
-// import "./ViewStretch.css";
+import "./ViewStretch.css";
 
 class ViewStretch extends Component {
     render() {
