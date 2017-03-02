@@ -39,8 +39,12 @@ button {
 
 .btn-start{
     margin-right: 8.62vw;
-    margin-top: 13.23vh;
-    margin-left: -74vw;
+    margin-top: 73.23vh;
+    margin-left: -51vw;
+    position: absolute;
+    z-index: 500;
+    width: 9.71vw;
+    min-width: 29.71vh;
 }
 .utilities{
     width: 30vw;
