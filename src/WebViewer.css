@@ -38,12 +38,13 @@ button {
 }
 
 .btn-start{
-    float: left;
     margin-right: 8.62vw;
     margin-top: 13.23vh;
-    position: absolute;
+    margin-left: -74vw;
 }
-
+.utilities{
+    width: 30vw;
+}
 
 
 p, .intro_rectangle{
