@@ -5,8 +5,31 @@ body{
     /*overflow: hidden;*/
 }
 .WebViewer{
-    font-size: 10vh;
-    width: 50%;
-    height: 100vh;
+    /*font-size: 10vh;*/
+    /*width: 50%;*/
+    /*height: 100vh;*/
     margin: auto;
+}
+
+.intro_rectangle{
+    background: #FFFFFF;
+    background: rgba(255,255,255,1);
+    opacity: 0.75;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -ms-filter: alpha(opacity=75) progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    filter: alpha(opacity=75) progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+}
+
+body, .gradient {
+    background: -moz-linear-gradient(0% 50% 0deg, rgba(156, 231, 255, 1) 0%, rgba(140, 237, 231, 1) 19.19%, rgba(114, 247, 191, 1) 54.55%, rgba(98, 253, 167, 1) 82.72%, rgba(92, 255, 158, 1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(156, 231, 255, 1) 0%, rgba(140, 237, 231, 1) 19.19%, rgba(114, 247, 191, 1) 54.55%, rgba(98, 253, 167, 1) 82.72%, rgba(92, 255, 158, 1) 100%);
+    background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0, rgba(156, 231, 255, 1)), color-stop(0.1919, rgba(140, 237, 231, 1)), color-stop(0.5455, rgba(114, 247, 191, 1)), color-stop(0.8272, rgba(98, 253, 167, 1)), color-stop(1, rgba(92, 255, 158, 1)));
+    background: -o-linear-gradient(0deg, rgba(156, 231, 255, 1) 0%, rgba(140, 237, 231, 1) 19.19%, rgba(114, 247, 191, 1) 54.55%, rgba(98, 253, 167, 1) 82.72%, rgba(92, 255, 158, 1) 100%);
+    background: -ms-linear-gradient(0deg, rgba(156, 231, 255, 1) 0%, rgba(140, 237, 231, 1) 19.19%, rgba(114, 247, 191, 1) 54.55%, rgba(98, 253, 167, 1) 82.72%, rgba(92, 255, 158, 1) 100%);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#9CE7FF', endColorstr='#5CFF9E' ,GradientType=0)";
+    background: linear-gradient(90deg, rgba(156, 231, 255, 1) 0%, rgba(140, 237, 231, 1) 19.19%, rgba(114, 247, 191, 1) 54.55%, rgba(98, 253, 167, 1) 82.72%, rgba(92, 255, 158, 1) 100%);
+    opacity: 0.66;
+    filter: alpha(opacity=66) progid:DXImageTransform.Microsoft.Alpha(opacity=66) progid:DXImageTransform.Microsoft.gradient(startColorstr='#9CE7FF', endColorstr='#5CFF9E', GradientType=1);
 }

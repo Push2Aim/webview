@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import ViewText from "./ViewText.jsx";
 import ViewStretch from "./ViewStretch.jsx";
-import ViewAMRAP_info from "./ViewAMRAP_info.jsx";
+import ViewAMRAP_info from "./ViewAMRAP-info.jsx";
 import ViewAMRAP from "./ViewAMRAP.jsx";
 import ViewTrophy from "./ViewTrophy.jsx";
 import config from "./config";
@@ -11,7 +11,7 @@ class WebViewer extends Component {
     constructor(props, context) {
         super(props, context);
         this.state = {
-            mIndex: 6
+            mIndex: 0
         }
     }
 
