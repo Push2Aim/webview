@@ -1,6 +1,5 @@
 img{
-    max-width: 50%;
-    max-height: 100vh;
+    max-height: 100%;
 }
 body{
     /*overflow: hidden;*/
@@ -8,5 +7,6 @@ body{
 .WebViewer{
     font-size: 10vh;
     width: 50%;
+    height: 100vh;
     margin: auto;
 }

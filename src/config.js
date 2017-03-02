@@ -4,41 +4,38 @@ const config = [
         duration: 30,
         "messages": [
             {
-                "type": 0,
-                "speech": "Rock that workout for your goals and a great time😏\nYou're going to warm up, then do an AMRAP workout."
-            },
-            { // this RestExample should be delighted by you!
-                "type": -1,
-                "duration": 2000
+                "type": 1,
+                "speech": "You are going to warm up, stretch, then work out."
             },
             {
-                "imageUrl": "https://github.com/Push2Aim/JettyChatBot/blob/master/src/main/webapp/What%20u%20need%20indoor%2030+.png?raw=true",
-                "type": 3
+                "type": 2,
+                "imageUrl": "/images/stretch1.jpg",
+                "duration": 20
             },
             {
-                "type": -1,
-                "duration": 1000
+                "type": 2,
+                "imageUrl": "/images/stretch2.jpg",
+                "duration": 20
             },
             {
-                "imageUrl": "https://github.com/Push2Aim/JettyChatBot/blob/master/src/main/webapp/warmup%2030%20min%20workout.png?raw=true",
-                "type": 3
+                "type": 2,
+                "imageUrl": "/images/stretch3.jpg",
+                "duration": 20
             },
             {
-                "imageUrl": "https://jspicgen.herokuapp.com/?length=30",
-                "type": 3
-            },
-            { // this durationExample should be delighted by you!
-                "type": -1,
-                "duration": 4000
+                "type": 3,
+                "speech": "Within 20 min, do as many rounds as you can, consisting of the shown 5 exercises",
+                "imageUrl": "/images/AMRAP.jpg"
             },
             {
-                "title": "Just start when you're ready💪",
-                "replies": [
-                    "AMRAP?🤔",
-                    "gym🏋",
-                    "outdoor🏃"
-                ],
-                "type": 2
+                "type": 4,
+                "imageUrl": "/images/AMRAP.jpg",
+                "duration": 20
+            },
+            {
+                "type": 5,
+                "imageUrl": "/images/Trophy@4x.png",
+                "speech": "Congratulations for completing your first workout!"
             }
         ]
     },

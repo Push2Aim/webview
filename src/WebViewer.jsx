@@ -1,5 +1,9 @@
 import React, {Component} from "react";
-import Clock from "./Clock";
+import ViewText from "./ViewText.jsx";
+import ViewStretch from "./ViewStretch.jsx";
+import ViewAMRAP_info from "./ViewAMRAP_info.jsx";
+import ViewAMRAP from "./ViewAMRAP.jsx";
+import ViewTrophy from "./ViewTrophy.jsx";
 import config from "./config";
 import "./WebViewer.css";
 
@@ -7,26 +11,16 @@ class WebViewer extends Component {
     constructor(props, context) {
         super(props, context);
         this.state = {
-            mIndex: 0
+            mIndex: 6
         }
     }
 
     render() {
         return (
-            <div className="WebViewer">
+            <div className="WebViewer" onClick={this.handleClick.bind(this)}>
                 { this.getWorkout(0,this.state.mIndex) }
-                <button onClick={this.handleClick.bind(this)}>Got it!</button>
             </div>
         );
-    }
-
-    addText(text) {
-        text = text || "Look at this beautiful Text";
-        return <p>{text}</p>;
-    }
-
-    addImage(imageUrl) {
-        return <img src={imageUrl} role="presentation"/>;
     }
 
     getWorkout(cIndex, mIndex) {
@@ -37,20 +31,19 @@ class WebViewer extends Component {
 
     mapWorkout(message) {
         switch (message.type) {
-            case 0:
-                return this.addText(message.speech);
-            case -1:
-                return this.addClock(message.duration);
+            case 1:
+                return <ViewText text={message.speech}/>;
+            case 2:
+                return <ViewStretch image={message.imageUrl} duration={message.duration}/>;
             case 3:
-                return this.addImage(message.imageUrl);
+                return <ViewAMRAP_info text={message.speech} image={message.imageUrl} />;
+            case 4:
+                return <ViewAMRAP text={message.speech} image={message.imageUrl} />;
+            case 5:
+                return <ViewTrophy text={message.speech} image={message.imageUrl} />;
             default:
-                return this.addText("unknown Type: " + message.type);
+                return <p>unknown Type: {message.type}</p>;
         }
-    }
-
-    addClock(duration) {
-        duration = duration || 5;
-        return <Clock duration={duration}/>
     }
 
     handleClick() {
