@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import Clock from "./Clock";
-// import "./ViewText.css";
+import "./ViewAMRAP.css";
 
 class ViewAMRAP extends Component {
     render() {
@@ -8,7 +8,7 @@ class ViewAMRAP extends Component {
             <div className="ViewAMRAP">
                 <Clock duration={this.props.duration}/>
                 <img src={this.props.image} role="presentation"/>
-                <button>start</button>
+                <button className="btn-start">start</button>
             </div>
         );
     }

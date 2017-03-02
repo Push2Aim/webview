@@ -8,7 +8,7 @@ class ViewStretch extends Component {
             <div className="ViewStretch">
                 <Clock duration={this.props.duration}/>
                 <img src={this.props.image} role="presentation"/>
-                <button>start</button>
+                <button className="btn-start">start</button>
             </div>
         );
     }

@@ -29,6 +29,23 @@ button {
     border-bottom-left-radius: 0px;
 }
 
+.Clock {
+    float: left;
+    margin-left: 8.62vw;
+    margin-top: 13.23vh;
+    height: 44.54vh;
+    width: 44.54vh;
+}
+
+.btn-start{
+    float: left;
+    margin-right: 8.62vw;
+    margin-top: 13.23vh;
+    position: absolute;
+}
+
+
+
 p, .intro_rectangle{
     background: #FFFFFF;
     background: rgba(255,255,255,1);
