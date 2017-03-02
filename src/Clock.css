@@ -1,7 +1,6 @@
 .wrapper {
   position: relative;
   margin: auto;
-  background-image: url(https://scontent.fmuc2-1.fna.fbcdn.net/v/t1.0-9/15032694_1150845078343525_306152533808879065_n.png?oh=fafc0911335529b0fca09f2fcea59af1&oe=5944D25D);
   background-position-x: 50%;
   background-position-y: 50%;
   border-radius: 100%;
@@ -13,18 +12,19 @@
   box-sizing: border-box; }
 
 .wrapper {
-  width: 90vh;
-  height: 90vh;
+  width: 30vh;
+  height: 30vh;
   max-height: 100vh;
-  background-size: 90vh 90vh;
-  background-color: #F5545B; }
+  background-size: 30vh 30vh;
+  background-color: white; }
 
 .wrapper .pie {
   width: 50%;
   height: 100%;
   transform-origin: 100% 50%;
   position: absolute;
-  border: 3vh solid #333333; }
+  background: #F5545B;
+  border: 1vh solid #333333; }
 
 .wrapper {
   animation: size 5s cubic-bezier(0.86, 0, 0.07, 1) 1 forwards; }
@@ -73,7 +73,7 @@
     opacity: 0; } }
 @keyframes size {
   50% ,100% {
-    background-size: 90vh 90vh; }
+    background-size: 30vh 30vh; }
   75% {
     background-size: 100px 100px; } }
 

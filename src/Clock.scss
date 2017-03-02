@@ -1,7 +1,7 @@
 .wrapper {
   position: relative;
   margin: auto;
-  background-image: url(https://scontent.fmuc2-1.fna.fbcdn.net/v/t1.0-9/15032694_1150845078343525_306152533808879065_n.png?oh=fafc0911335529b0fca09f2fcea59af1&oe=5944D25D);
+  //background-image: url(https://scontent.fmuc2-1.fna.fbcdn.net/v/t1.0-9/15032694_1150845078343525_306152533808879065_n.png?oh=fafc0911335529b0fca09f2fcea59af1&oe=5944D25D);
   background-position-x: 50%;
   background-position-y: 50%;
   border-radius: 100%;
@@ -18,7 +18,8 @@
     height: $size;
     max-height: 100vh;
     background-size: $size $size;
-    background-color: $color;
+    //background-color: $color;
+    background-color: white;
   }
 
   #{$item} .pie {
@@ -26,7 +27,7 @@
     height: 100%;
     transform-origin: 100% 50%;
     position: absolute;
-    //background: $color;
+    background: $color;
     border: #{$border};
   }
 
@@ -72,7 +73,8 @@
   }
 
   @keyframes rota {
-    0% { transform: rotate(0deg); }
+    0% { transform: rotate(0deg);
+    }
     100% { transform: rotate(360deg); }
   }
 
@@ -86,4 +88,4 @@
     75% { background-size: 100px 100px; }
   }
 }
-@include timer('.wrapper', 5, 90vh, #F5545B, '3vh solid #333333');
+@include timer('.wrapper', 5, 30vh, #F5545B, '1vh solid #333333');
