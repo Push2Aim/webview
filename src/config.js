@@ -8,13 +8,28 @@ const config = [
                 "speech": "You are going to warm up, stretch, then work out."
             },
             {
-                "type": 2,
+                "type": -2,
                 "imageUrl": "/images/neck.png",
                 "duration": 20
             },
             {
                 "type": 2,
+                "imageUrl": "/images/neck.png",
+                "duration": 20
+            },
+            {
+                "type": -2,
                 "imageUrl": "/images/quads.png",
+                "duration": 20
+            },
+            {
+                "type": 2,
+                "imageUrl": "/images/quads.png",
+                "duration": 20
+            },
+            {
+                "type": -2,
+                "imageUrl": "/images/shoulders.png",
                 "duration": 20
             },
             {

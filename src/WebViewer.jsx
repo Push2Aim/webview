@@ -41,6 +41,8 @@ class WebViewer extends Component {
                 return <ViewAMRAP text={message.speech} image={message.imageUrl} />;
             case 5:
                 return <ViewTrophy text={message.speech} image={message.imageUrl} />;
+            case -2:
+                return <ViewStretch image={message.imageUrl} />;
             default:
                 return <p>unknown Type: {message.type}</p>;
         }

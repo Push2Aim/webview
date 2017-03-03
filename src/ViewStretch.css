@@ -4,3 +4,8 @@
     height: 80vh;
     /*position: absolute;*/
 }
+
+.circle {
+    border-radius: 100%;
+    background: white;
+}
