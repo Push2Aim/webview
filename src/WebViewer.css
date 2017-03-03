@@ -27,6 +27,7 @@ button {
     height: 18.23vh;
     width: 20vw;
     font-size: 8vh;
+    font-family: "Helvetica Neue LT";
     color: white;
     background-color: #0084fe;
     border-radius: 50px;
@@ -51,12 +52,11 @@ button {
 
 .btn-start{
     margin-right: 8.62vw;
-    margin-top: 73.23vh;
-    margin-left: -51vw;
-    position: absolute;
+    margin-top: 68.31vh;
+    margin-left: -48vw;
+    width: 24.51vw;
     z-index: 500;
-    width: 9.71vw;
-    min-width: 29.71vh;
+    position: absolute;
 }
 
 p, .intro_rectangle{
@@ -81,6 +81,5 @@ body, .gradient {
     background: -ms-linear-gradient(0deg, rgba(156, 231, 255, 1) 0%, rgba(140, 237, 231, 1) 19.19%, rgba(114, 247, 191, 1) 54.55%, rgba(98, 253, 167, 1) 82.72%, rgba(92, 255, 158, 1) 100%);
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#9CE7FF', endColorstr='#5CFF9E' ,GradientType=0)";
     background: linear-gradient(90deg, rgba(156, 231, 255, 1) 0%, rgba(140, 237, 231, 1) 19.19%, rgba(114, 247, 191, 1) 54.55%, rgba(98, 253, 167, 1) 82.72%, rgba(92, 255, 158, 1) 100%);
-    opacity: 0.66;
     filter: alpha(opacity=66) progid:DXImageTransform.Microsoft.Alpha(opacity=66) progid:DXImageTransform.Microsoft.gradient(startColorstr='#9CE7FF', endColorstr='#5CFF9E', GradientType=1);
 }
