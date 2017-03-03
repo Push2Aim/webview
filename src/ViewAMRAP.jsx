@@ -7,8 +7,8 @@ class ViewAMRAP extends Component {
         return (
             <div className="ViewAMRAP">
                 <Clock duration={this.props.duration}/>
-                <img src={this.props.image} role="presentation"/>
                 <button className="btn-start">start</button>
+                <img src={this.props.image} role="presentation"/>
             </div>
         );
     }

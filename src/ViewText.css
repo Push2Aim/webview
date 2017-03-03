@@ -3,6 +3,6 @@
     margin-top: 10.54vh;
     margin-bottom: 10.54vh;
     width: 61.29vw;
-    min-height: 44.55vh;
-    padding: 1%;
+    max-height: 44.55vh;
+    padding: 0%;
 }

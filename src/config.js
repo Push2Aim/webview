@@ -9,27 +9,27 @@ const config = [
             },
             {
                 "type": 2,
-                "imageUrl": "/images/stretch1.jpg",
+                "imageUrl": "/images/neck.png",
                 "duration": 20
             },
             {
                 "type": 2,
-                "imageUrl": "/images/stretch2.jpg",
+                "imageUrl": "/images/quads.png",
                 "duration": 20
             },
             {
                 "type": 2,
-                "imageUrl": "/images/stretch3.jpg",
+                "imageUrl": "/images/shoulders.png",
                 "duration": 20
             },
             {
                 "type": 3,
                 "speech": "Within 20 min, do as many rounds as you can, consisting of the shown 5 exercises",
-                "imageUrl": "/images/AMRAP.jpg"
+                "imageUrl": "/images/AMRAP.png"
             },
             {
                 "type": 4,
-                "imageUrl": "/images/AMRAP.jpg",
+                "imageUrl": "/images/AMRAP.png",
                 "duration": 20
             },
             {
