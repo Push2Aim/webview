@@ -1,13 +1,11 @@
 .ViewTrophy p {
     margin: auto;
-    margin-bottom: 10.18vh;
-    width: 61.29vw;
-    min-height: 44.55vh;
+    width: 57.29vw;
     padding: 1%;
 }
 
 .ViewTrophy img{
     height: 39.03vh;
     margin-top: 7.58vh;
-    margin-bottom: -1%;
+    margin-bottom: -5.5vh;
 }
