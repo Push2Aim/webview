@@ -1,5 +1,9 @@
 .ViewAMRAP img{
     margin: auto;
-    margin-top: 10vh;
-    height: 80vh;
+    float: right;
+    /*margin-top: 10vh;*/
+    /*height: 80vh;*/
+}
+.ViewAMRAP .btn-start{
+    margin-left: -27vw;
 }
