@@ -24,7 +24,7 @@ const config = [
             },
             {
                 "type": 3,
-                "speech": "Within 20 min, do as many rounds as you can, consisting of the shown 5 exercises",
+                "speech": "Within 20 min, do as many rounds as you can, consisting of the shown 5 exercises.",
                 "imageUrl": "/images/AMRAP.png"
             },
             {

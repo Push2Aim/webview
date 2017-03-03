@@ -1,30 +1,31 @@
 .ViewAMRAPInfo img{
     float: left;
-    height: 80vh;
-    margin-left: 2vw;
-    margin-top: 7vh;
+    /*height: 80vh;*/
+    /*margin-left: 2vw;*/
+    /*margin-top: 7vh;*/
 }
 
 .ViewAMRAPInfo p{
     /*float: right;*/
+    position: relative;
     margin: auto;
     width: 32.3vw;
     margin-top: 7.98vh;
-    margin-bottom: 5.11vw;
-    position: relative;
-    font-size: 6vh;
+    margin-bottom: 5.11vh;
+    font-size: 7.5vh;
+    max-height: 57.47vh;
 }
 .ViewAMRAPInfo button{
     /*float: right;*/
     margin: auto;
-    width: 15.8vw;
+    width: 17vw;
 
 }
 
 .ViewAMRAPInfo .util{
     float: right;
     margin: auto;
-    margin-right: 2vw;
+    margin-right: 3vw;
 }
 
 

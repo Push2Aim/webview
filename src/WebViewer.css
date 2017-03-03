@@ -36,10 +36,14 @@ button {
 .btn-left{
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
+    float: left;
+    height: 13.88vh;
 }
 .btn-right{
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
+    float: right;
+    height: 13.88vh;
 }
 
 .Clock {
