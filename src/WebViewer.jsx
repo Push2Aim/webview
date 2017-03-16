@@ -11,21 +11,20 @@ class WebViewer extends Component {
     constructor(props, context) {
         super(props, context);
         this.state = {
-            mIndex: 0
+            mIndex: 0,
+            cIndex: this.getCIndex(props.location, props.duration)
         }
     }
 
     render() {
         return (
             <div className="WebViewer" onClick={this.handleClick.bind(this)}>
-                { this.getWorkout(0,this.state.mIndex) }
+                { this.getWorkout() }
             </div>
         );
     }
 
-    getWorkout(cIndex, mIndex) {
-        mIndex = mIndex || 0;
-        cIndex = cIndex || 0;
+    getWorkout(mIndex = this.state.mIndex, cIndex = this.state.cIndex) {
         return this.mapWorkout(config[cIndex].messages[mIndex]);
     }
 
@@ -36,13 +35,13 @@ class WebViewer extends Component {
             case 2:
                 return <ViewStretch image={message.imageUrl} duration={message.duration}/>;
             case 3:
-                return <ViewAMRAPInfo text={message.speech} image={message.imageUrl} />;
+                return <ViewAMRAPInfo text={message.speech} image={message.imageUrl}/>;
             case 4:
-                return <ViewAMRAP text={message.speech} image={message.imageUrl} />;
+                return <ViewAMRAP text={message.speech} image={message.imageUrl}/>;
             case 5:
-                return <ViewTrophy text={message.speech} image={message.imageUrl} />;
+                return <ViewTrophy text={message.speech} image={message.imageUrl}/>;
             case -2:
-                return <ViewStretch image={message.imageUrl} />;
+                return <ViewStretch image={message.imageUrl}/>;
             default:
                 return <p>unknown Type: {message.type}</p>;
         }
@@ -50,9 +49,46 @@ class WebViewer extends Component {
 
     handleClick() {
         this.setState({
-           mIndex: this.state.mIndex + 1
+            mIndex: this.state.mIndex + 1
         });
     }
+
+    getCIndex(location, duration) {
+        location = this.parsLocation(location);
+        duration = this.parsDuration(duration);
+        console.log(location, duration);
+        for (let i = 0; i < config.length; i++) {
+            let item = config[i];
+            if (location === item.location && duration === item.duration) {
+                return i;
+            }
+        }
+        return 0;
+
+    }
+
+    parsDuration(duration) {
+        if (!duration || duration === "")
+            return 30;
+
+        duration = Number.parseInt(duration, 10);
+        return duration <= 5 ? 5 : duration <= 60 ?
+                Math.floor(duration / 5) * 5 : 60;
+    }
+
+    parsLocation(location) {
+        if (location)
+            switch (location) {
+                case "home":
+                case "gym":
+                case "outdoor":
+                    return location;
+                default:
+                    return "home";
+            }
+        else return "home";
+    }
+
 }
 
 export default WebViewer;
