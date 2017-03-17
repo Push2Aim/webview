@@ -1,4 +1,4 @@
-/* Generated on: Thu Mar 16 2017 10:43:26 GMT+0000 (UTC) */
+/* Generated on: Thu Mar 16 2017 15:27:20 GMT+0000 (UTC) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -12,6 +12,13 @@
 /* ==========================================================================
    Start of custom Webflow CSS
    ========================================================================== */
+body {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+}
+
 .slider {
   overflow: hidden;
   height: 100vh;
@@ -39,6 +46,30 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.content-parent.welcome {
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-image: -webkit-linear-gradient(270deg, #a0b5ff, #a0b5ff);
+  background-image: linear-gradient(180deg, #a0b5ff, #a0b5ff);
+  text-shadow: 0 0 0 #000;
+}
+
+.content-parent.welcome-stretching-tuts {
+  padding-right: 33vw;
+}
+
+.content-parent.explaining-timer {
+  position: absolute;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .timer-button-boss {
@@ -1424,7 +1455,7 @@
 
 ._1-step-closer.welcome-to {
   margin-bottom: 3vh;
-  color: #ffdb49;
+  color: #ffd633;
   font-size: 11vh;
   line-height: 12vh;
   text-align: center;
@@ -1519,10 +1550,7 @@
   right: 0px;
   bottom: 0px;
   z-index: 5000;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   width: 100%;
   height: 100%;
   -webkit-box-orient: vertical;
@@ -1613,11 +1641,14 @@
 }
 
 .tut-welcome-supervisor {
+  z-index: 5002;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 90%;
+  width: 80%;
+  height: 55%;
+  margin-left: -12vw;
   padding: 3vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1730,6 +1761,7 @@
 
 .timer-explanation {
   position: static;
+  display: block;
   width: 30vw;
   height: 18vw;
   max-height: 30vh;
@@ -1767,6 +1799,10 @@
   box-shadow: 0 0 4vh 0 hsla(0, 0%, 100%, .75);
 }
 
+.timer-explanation.timer-explanation-then-you-start {
+  margin-top: 0vh;
+}
+
 .timer-explanation-father {
   position: absolute;
   left: 0px;
@@ -1789,6 +1825,7 @@
 }
 
 .timer-explanation-text {
+  display: block;
   padding: 2vw 1vw;
   font-family: Lato, sans-serif;
   color: #383838;
@@ -1803,6 +1840,15 @@
   padding-bottom: 1vw;
   font-size: 12vh;
   line-height: 13vh;
+}
+
+.timer-explanation-text.timer-explanation-text-then-start {
+  margin-top: -5vh;
+}
+
+.timer-explanation-text.timer-explanation-text-start {
+  margin-top: 8vh;
+  font-size: 9.5vh;
 }
 
 .timer-explanation-2 {
@@ -1898,6 +1944,17 @@
   width: 10vw;
 }
 
+.timer-explanation-start {
+  margin-top: 7vh;
+  padding: 2vw 1vw;
+  font-family: Lato, sans-serif;
+  color: #383838;
+  font-size: 9.5vh;
+  line-height: 10vh;
+  font-weight: 300;
+  text-align: center;
+}
+
 html.w-mod-js *[data-ix="display-none-on-load-stretching"] {
   display: none;
 }
@@ -1967,7 +2024,21 @@ html.w-mod-js *[data-ix="body-part-burn-text-appear"] {
   transform: translate(0px, 10vh) scale(0.95, 0.95);
 }
 
+html.w-mod-js *[data-ix="body-part-burn-text-appear-2"] {
+  opacity: 0;
+  -webkit-transform: translate(0px, 10vh) scale(0.95, 0.95);
+  -ms-transform: translate(0px, 10vh) scale(0.95, 0.95);
+  transform: translate(0px, 10vh) scale(0.95, 0.95);
+}
+
 html.w-mod-js *[data-ix="bodypart-to-move-text-appear"] {
+  opacity: 0;
+  -webkit-transform: translate(0px, 10vh) scale(0.95, 0.95);
+  -ms-transform: translate(0px, 10vh) scale(0.95, 0.95);
+  transform: translate(0px, 10vh) scale(0.95, 0.95);
+}
+
+html.w-mod-js *[data-ix="bodypart-to-move-text-appear-2"] {
   opacity: 0;
   -webkit-transform: translate(0px, 10vh) scale(0.95, 0.95);
   -ms-transform: translate(0px, 10vh) scale(0.95, 0.95);
@@ -1995,7 +2066,7 @@ html.w-mod-js *[data-ix="display-none-on-load-vid-tuts"] {
   opacity: 0;
 }
 
-html.w-mod-js *[data-ix="timer-explanation-wait"] {
+html.w-mod-js *[data-ix="timer-explanation"] {
   display: none;
   opacity: 0;
   -webkit-transform: translate(0px, 5vh) scale(0.95, 0.95);

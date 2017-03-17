@@ -5,7 +5,7 @@ import ViewAMRAPInfo from "./ViewAMRAPInfo.jsx";
 import ViewAMRAP from "./ViewAMRAP.jsx";
 import ViewTrophy from "./ViewTrophy.jsx";
 import config from "./config";
-// import "./webflow.css";
+import "./webflow.css";
 
 import Welcome from "./Welcome"
 import Warmup from "./Warmup"
