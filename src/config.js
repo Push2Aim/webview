@@ -2,56 +2,16 @@ const config = [
     {
         location: "home",
         duration: 30,
-        "messages": [
+        "data": [
             {
-                "type": 1,
-                "speech": "You are going to warm up, stretch, then work out."
+                "type": "Trophy",
+                "title": "Congratulations",
+                "trophy_pic": "http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c352892387178e61460262_Trophy.png",
+                "text": {
+                    "title": "1 Step Closer To YourGoal!",
+                    "text": "I'm happy for you and hope you keep going.",
+                }
             },
-            {
-                "type": -2,
-                "imageUrl": "/images/neck.png",
-                "duration": 20
-            },
-            {
-                "type": 2,
-                "imageUrl": "/images/neck.png",
-                "duration": 20
-            },
-            {
-                "type": -2,
-                "imageUrl": "/images/quads.png",
-                "duration": 20
-            },
-            {
-                "type": 2,
-                "imageUrl": "/images/quads.png",
-                "duration": 20
-            },
-            {
-                "type": -2,
-                "imageUrl": "/images/shoulders.png",
-                "duration": 20
-            },
-            {
-                "type": 2,
-                "imageUrl": "/images/shoulders.png",
-                "duration": 20
-            },
-            {
-                "type": 3,
-                "speech": "Within 20 min, do as many rounds as you can, consisting of the shown 5 exercises.",
-                "imageUrl": "/images/AMRAP.png"
-            },
-            {
-                "type": 4,
-                "imageUrl": "/images/AMRAP.png",
-                "duration": 20
-            },
-            {
-                "type": 5,
-                "imageUrl": "/images/Trophy@4x.png",
-                "speech": "Congratulations for completing your first workout!"
-            }
         ]
     },
 ];
