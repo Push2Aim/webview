@@ -5,7 +5,14 @@ import ViewAMRAPInfo from "./ViewAMRAPInfo.jsx";
 import ViewAMRAP from "./ViewAMRAP.jsx";
 import ViewTrophy from "./ViewTrophy.jsx";
 import config from "./config";
-import "./WebViewer.css";
+// import "./webflow.css";
+
+import Welcome from "./Welcome"
+import Warmup from "./Warmup"
+import Stretching from "./Stretching"
+import AMRAPtut from "./AMRAPtut"
+import AMRAP from "./AMRAP"
+import Trophy from "./Trophy"
 
 class WebViewer extends Component {
     constructor(props, context) {
@@ -17,9 +24,19 @@ class WebViewer extends Component {
     }
 
     render() {
+        document.title = this.props.location + this.props.duration;
         return (
-            <div className="WebViewer" onClick={this.handleClick.bind(this)}>
-                { this.getWorkout() }
+            <div className="slider w-slider" data-animation="slide" data-duration="400" data-easing="ease-in"
+                 data-infinite="1">
+                <div className="w-slider-mask">
+                    <Welcome/>
+                    <Warmup/>
+                    <Stretching/>
+                    <AMRAPtut/>
+                    <AMRAP/>
+                    <Trophy/>
+                </div>
+                <div className="slide-nav w-round w-slider-nav"></div>
             </div>
         );
     }
