@@ -7,12 +7,12 @@ class AMRAP extends Component {
                 <div className="content-parent">
                     <div className="sidebar-amrap-explanation" data-ix="display-none-on-load-amrap-explanation">
                         <div className="close-button-boss">
-                            {/*<a className="close-button-amrap w-button"*/}
-                            {/*data-ix="hide-button-amrap" href="#">X</a>*/}
-                            {/*<div className="duplicates tut-spread"><h1 className="heading">AMRAP</h1>*/}
-                            {/*<p className="explanation">Those 3 exercises form 1 round.<br>Do <strong>A</strong>s*/}
-                            {/*<strong>M</strong>any <strong>R</strong>ounds <strong>A</strong>s <strong>P</strong>ossible*/}
-                            {/*within 7 min.</br></p></div>*/}
+                            <a className="close-button-amrap w-button"
+                            data-ix="hide-button-amrap" href="#">X</a>
+                            <div className="duplicates tut-spread">
+                                <h1 className="heading">AMRAP</h1>
+                                <p className="explanation">Those 3 exercises form 1 round. Do As Many Rounds As Possible within 7 min.</p>
+                            </div>
                             <div className="video-tut-supervisor">
                                 <div className="squats-tut-supervisor" data-ix="hide"></div>
                             </div>
