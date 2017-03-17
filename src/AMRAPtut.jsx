@@ -25,27 +25,30 @@ class AMRAP extends Component {
                                                                  href="#">back</a></div>
                             <div className="dropdown-father">
                                 <div className="exercise-tut-boss" data-ix="dropdown-display-none">
-                                    {/*<div className="squats-tut w-embed w-video"*/}
-                                    {/*data-ix="display-none-on-load-vid-tuts"*/}
-                                    {/*style="padding-top: 56.17021276595745%;">*/}
-                                    {/*<iframe className="embedly-embed"*/}
-                                    {/*src="//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FDy28eq2PjcM%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DDy28eq2PjcM&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FDy28eq2PjcM%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"*/}
-                                    {/*scrolling="no" frameborder="0" allowfullscreen></iframe>*/}
-                                    {/*</div>*/}
-                                    {/*<div className="push-ups-tut w-embed w-video"*/}
-                                    {/*data-ix="display-none-on-load-vid-tuts"*/}
-                                    {/*style="padding-top: 56.17021276595745%;">*/}
-                                    {/*<iframe className="embedly-embed"*/}
-                                    {/*src="//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FIODxDxX7oi4%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DIODxDxX7oi4&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FIODxDxX7oi4%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"*/}
-                                    {/*scrolling="no" frameborder="0" allowfullscreen></iframe>*/}
-                                    {/*</div>*/}
-                                    {/*<div className="sit-ups-tut w-embed w-video"*/}
-                                    {/*data-ix="display-none-on-load-vid-tuts"*/}
-                                    {/*style="padding-top: 56.17021276595745%;">*/}
-                                    {/*<iframe className="embedly-embed"*/}
-                                    {/*src="//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fy5BpvYGyVb0%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dy5BpvYGyVb0&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fy5BpvYGyVb0%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"*/}
-                                    {/*scrolling="no" frameborder="0" allowfullscreen></iframe>*/}
-                                    {/*</div>*/}
+                                    <div className="squats-tut w-embed w-video"
+                                    data-ix="display-none-on-load-vid-tuts"
+                                    >
+                                    {/*style="padding-top: 56.17021276595745%;"*/}
+                                    <iframe className="embedly-embed"
+                                    src="//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FDy28eq2PjcM%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DDy28eq2PjcM&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FDy28eq2PjcM%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"
+                                    scrolling="no" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                    <div className="push-ups-tut w-embed w-video"
+                                    data-ix="display-none-on-load-vid-tuts"
+                                    >
+                                    {/*style="padding-top: 56.17021276595745%;"*/}
+                                    <iframe className="embedly-embed"
+                                    src="//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FIODxDxX7oi4%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DIODxDxX7oi4&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FIODxDxX7oi4%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"
+                                    scrolling="no" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                    <div className="sit-ups-tut w-embed w-video"
+                                    data-ix="display-none-on-load-vid-tuts"
+                                    >
+                                    {/*style="padding-top: 56.17021276595745%;"*/}
+                                    <iframe className="embedly-embed"
+                                    src="//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fy5BpvYGyVb0%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dy5BpvYGyVb0&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fy5BpvYGyVb0%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"
+                                    scrolling="no" frameborder="0" allowfullscreen></iframe>
+                                    </div>
                                     <a className="tut-squats w-button" data-ix="vid-tut-squats-appear" href="#">Squats</a><a
                                     className="tut-push-ups w-button" data-ix="vid-tut-push-ups-appear"
                                     href="#">Push-Ups</a>
