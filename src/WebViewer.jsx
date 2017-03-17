@@ -29,39 +29,35 @@ class WebViewer extends Component {
             <div className="slider w-slider" data-animation="slide" data-duration="400" data-easing="ease-in"
                  data-infinite="1">
                 <div className="w-slider-mask">
-                    <Welcome/>
-                    <Warmup/>
-                    <Stretching/>
-                    <AMRAPtut/>
-                    <AMRAP/>
-                    <Trophy/>
+                    {/*<Welcome/>*/}
+                    {/*<Warmup/>*/}
+                    {/*<Stretching/>*/}
+                    {/*<AMRAPtut/>*/}
+                    {/*<AMRAP/>*/}
+                    {/*<Trophy/>*/}
+
+                    {this.buildView(this.state.cIndex)}
                 </div>
                 <div className="slide-nav w-round w-slider-nav"></div>
             </div>
         );
     }
 
-    getWorkout(mIndex = this.state.mIndex, cIndex = this.state.cIndex) {
-        return this.mapWorkout(config[cIndex].messages[mIndex]);
+    buildView(cIndex) {
+        return config[cIndex].data.map(this.mapWorkout);
     }
 
     mapWorkout(message) {
         switch (message.type) {
-            case 1:
-                return <ViewText text={message.speech}/>;
-            case 2:
-                return <ViewStretch image={message.imageUrl} duration={message.duration}/>;
-            case 3:
-                return <ViewAMRAPInfo text={message.speech} image={message.imageUrl}/>;
-            case 4:
-                return <ViewAMRAP text={message.speech} image={message.imageUrl}/>;
-            case 5:
-                return <ViewTrophy text={message.speech} image={message.imageUrl}/>;
-            case -2:
-                return <ViewStretch image={message.imageUrl}/>;
+            case "Trophy":
+                return  <Trophy/>;
             default:
                 return <p>unknown Type: {message.type}</p>;
         }
+    }
+
+    getWorkout(mIndex = this.state.mIndex, cIndex = this.state.cIndex) {
+        return this.mapWorkout(config[cIndex].messages[mIndex]);
     }
 
     handleClick() {
