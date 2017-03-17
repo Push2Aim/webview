@@ -16,7 +16,8 @@ class AMRAP extends Component {
                             <div className="video-tut-supervisor">
                                 <div className="squats-tut-supervisor" data-ix="hide"></div>
                             </div>
-                            <div className="tut-button-boss"><a className="tut-button w-button"
+                            <div className="tut-button-boss">
+                                <a className="tut-button w-button"
                                                                 data-ix="dropdown-show"
                                                                 href="#">How to do&nbsp;those 3 exercises</a>
                             </div>
@@ -50,9 +51,10 @@ class AMRAP extends Component {
                                     scrolling="no" frameborder="0" allowfullscreen></iframe>
                                     </div>
 
-                                    <a className="tut-squats w-button" data-ix="vid-tut-squats-appear" href="#">Squats</a><a
-                                    className="tut-push-ups w-button" data-ix="vid-tut-push-ups-appear"
-                                    href="#">Push-Ups</a><a
+                                    <a className="tut-squats w-button" data-ix="vid-tut-squats-appear" href="#">Squats</a>
+                                    <a className="tut-push-ups w-button" data-ix="vid-tut-push-ups-appear"
+                                    href="#">Push-Ups</a>
+                                    <a
                                     className="tut-sit-ups w-button" data-ix="vid-tut-sit-ups-appear"
                                     href="#">Sit-Ups</a>
                                 </div>
@@ -62,12 +64,13 @@ class AMRAP extends Component {
 
 
                     <div className="timer-button-boss">
-                        <div className="amraphelp timer-button-supervisor"><a className="timer w-inline-block"
-                                                                              href="#"></a><a
-                            className="help-stretching w-button" data-ix="show-and-hide-amrap-workout" href="#">Help</a>
+                        <div className="amraphelp timer-button-supervisor">
+                            <a className="timer w-inline-block" href="#"></a>
+                            <a className="help-stretching w-button" data-ix="show-and-hide-amrap-workout" href="#">Help</a>
                         </div>
                     </div>
-                    <div className="amrap-workout"><img className="amrap" sizes="50vw"
+                    <div className="amrap-workout">
+                        <img className="amrap" sizes="50vw"
                                                         src="http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c28dd12a203f5d54fff426_7%20min%20AMRAP%20example.png"
                                                         srcset="http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c28dd12a203f5d54fff426_7%20min%20AMRAP%20example-p-500x500.png 500w, http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c28dd12a203f5d54fff426_7%20min%20AMRAP%20example-p-800x800.png 800w, http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c28dd12a203f5d54fff426_7%20min%20AMRAP%20example-p-1080x1080.png 1080w, http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c28dd12a203f5d54fff426_7%20min%20AMRAP%20example-p-1600x1600.png 1600w, http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c28dd12a203f5d54fff426_7%20min%20AMRAP%20example-p-2000x2000.png 2000w, http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c28dd12a203f5d54fff426_7%20min%20AMRAP%20example.png 2250w"/>
                     </div>

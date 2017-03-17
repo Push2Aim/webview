@@ -47,17 +47,27 @@ class WebViewer extends Component {
         return config[cIndex].data.map(this.mapWorkout);
     }
 
-    mapWorkout(message) {
-        switch (message.type) {
+    mapWorkout(data) {
+        switch (data.type) {
+            case "Welcome":
+                return  <Welcome data={data}/>;
+            case "Warmup":
+                return  <Warmup data={data}/>;
+            case "Stretching":
+                return  <Stretching data={data}/>;
+            case "AMRAPtut":
+                return  <AMRAPtut data={data}/>;
+            case "AMRAP":
+                return  <AMRAP data={data}/>;
             case "Trophy":
-                return  <Trophy/>;
+                return  <Trophy data={data}/>;
             default:
-                return <p>unknown Type: {message.type}</p>;
+                return <p>unknown Type: {data.type}</p>;
         }
     }
 
     getWorkout(mIndex = this.state.mIndex, cIndex = this.state.cIndex) {
-        return this.mapWorkout(config[cIndex].messages[mIndex]);
+        return this.mapWorkout(config[cIndex].data[mIndex]);
     }
 
     handleClick() {

@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 
-class Stretching extends Component {
+class WarmupStretching extends Component {
     render() {
         return (
             <div className="w-slide">
