@@ -1,12 +1,12 @@
 import React, {Component} from "react";
 import config from "./config";
-import "./webflow.css";
 import Welcome from "./Welcome";
 import Warmup from "./Warmup";
 import Stretching from "./Stretching";
 import AMRAPtut from "./AMRAPtut";
 import AMRAP from "./AMRAP";
 import Trophy from "./Trophy";
+// import "./webflow.css";
 
 class WebViewer extends Component {
     constructor(props, context) {
@@ -24,7 +24,13 @@ class WebViewer extends Component {
                 <div className="w-slider-mask">
                     {this.buildView(this.state.cIndex)}
                 </div>
-                <div className="slide-nav w-round w-slider-nav"></div>
+                <div className="w-slider-arrow-left">
+                    <div className="w-icon-slider-left"></div>
+                </div>
+                <div className="start-workout-button w-slider-arrow-right" data-ix="start-button-blink">
+                    <div>Start</div>
+                </div>
+                <div className="w-round w-slider-nav"></div>
             </div>
         );
     }
