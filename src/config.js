@@ -10,6 +10,21 @@ const config = [
                     "title": "Welcome to your home workout!",
                     "text": "You're going to warm up doing cardio, then do a stretching routine twice, and lastly finish it off with a challenging workout.",
                 },
+                "need":[
+                    {
+                        "text": "chair",
+                        "src": "http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58cc7a15361730277f802a1e_chair.png"
+                    },{
+                        "text": "chair",
+                        "src": "http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58cc7a15361730277f802a1e_chair.png"
+                    },{
+                        "text": "chair",
+                        "src": "http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58cc7a15361730277f802a1e_chair.png"
+                    },{
+                        "text": "chair",
+                        "src": "http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58cc7a15361730277f802a1e_chair.png"
+                    },
+                ]
             },
             {
                 "type": "Warmup",
