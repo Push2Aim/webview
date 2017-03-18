@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import Clock from "./Clock";
 
 class Stretching extends Component {
     render() {
@@ -12,8 +13,11 @@ class Stretching extends Component {
                             <a className="close-button-stretching w-button" data-ix="hide-button" href="#">X</a></div>
                     </div>
                     <div className="timer-button-boss">
-                        <div className="timer-button-supervisor"><a className="timer w-inline-block" href="#"></a><a
-                            className="help-stretching w-button" data-ix="show-and-hide-stretching" href="#">Help</a>
+                        <div className="timer-button-supervisor">
+                            <a className="timer w-inline-block" href="#">
+                                <Clock duration={this.props.duration}/>
+                            </a>
+                            <a className="help-stretching w-button" data-ix="show-and-hide-stretching" href="#">Help</a>
                         </div>
                     </div>
                     <div className="pic-boss">

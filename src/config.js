@@ -67,18 +67,18 @@ const config = [
             //         "workout": "http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c28dd12a203f5d54fff426_7%20min%20AMRAP%20example.png",
             //     }
             // },
-            // {
-            //     "type": "Stretching",
-            //     "title": "Stretching",
-            //     "texts": {
-            //         "heading": "Stretching",
-            //         "explanation": "Take your time. Breathe all the time. Don't spoil yourself, but don't stretch to agony.",
-            //     },
-            //     "timer": 10,
-            //     "images": {
-            //         "pic": "http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c4617357a2703f67303098_ShouldersWeb.png",
-            //     },
-            // },
+            {
+                "type": "Stretching",
+                "title": "Stretching",
+                "texts": {
+                    "heading": "Stretching",
+                    "explanation": "Take your time. Breathe all the time. Don't spoil yourself, but don't stretch to agony.",
+                },
+                "timer": 10,
+                "images": {
+                    "pic": "http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c4617357a2703f67303098_ShouldersWeb.png",
+                },
+            },
             // {
             //     "type": "Warmup",
             //     "title": "Warmup",
@@ -91,14 +91,14 @@ const config = [
             //         "pic": "http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c4617357a2703f67303098_ShouldersWeb.png",
             //     },
             // },
-            {
-                "type": "Welcome",
-                "title": "Welcome",
-                "texts": {
-                    "title": "Welcome to your home workout!",
-                    "text": "You're going to warm up doing cardio, then do a stretching routine twice, and lastly finish it off with a challenging workout.",
-                },
-            },
+            // {
+            //     "type": "Welcome",
+            //     "title": "Welcome",
+            //     "texts": {
+            //         "title": "Welcome to your home workout!",
+            //         "text": "You're going to warm up doing cardio, then do a stretching routine twice, and lastly finish it off with a challenging workout.",
+            //     },
+            // },
         ]
     },
 ];

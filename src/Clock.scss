@@ -88,4 +88,4 @@
     75% { background-size: 100px 100px; }
   }
 }
-@include timer('.wrapper', 5, 30vh,  #0084fe, '1vh solid  #0084fe');
+@include timer('.wrapper', 5, 100%,  #0084fe, '1vh solid  #0084fe');
