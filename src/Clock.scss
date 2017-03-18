@@ -7,7 +7,7 @@
   border-radius: 100%;
   background-repeat: no-repeat;
 }
-@mixin timer($item, $duration, $size, $color, $border, $hover: running) {
+@mixin timer($item, $duration, $size, $color, $border, $play, $selector: running) {
   .wrapper, .wrapper * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -39,14 +39,9 @@
     border-radius: 100% 0 0 100% / 50% 0 0 50%;
     z-index: 200;
     border-right: none;
-    animation: rota $duration + s linear 1 forwards;
+    animation: rota $duration + s linear 1 forwards ;
   }
-  #{$item}:hover .wrapper,
-  #{$item}:hover .spinner,
-  #{$item}:hover .filler,
-  #{$item}:hover .mask {
-    animation-play-state: $hover;
-  }
+
 
   #{$item} .filler {
     border-radius: 0 100% 100% 0 / 0 50% 50% 0;
@@ -72,6 +67,20 @@
     background-position-x: 0%;
   }
 
+  #{$item} .wrapper,
+  #{$item} .spinner,
+  #{$item} .filler,
+  #{$item} .mask {
+    animation-play-state: $play;
+  }
+
+  #{$item}:hover .wrapper,
+  #{$item}:hover .spinner,
+  #{$item}:hover .filler,
+  #{$item}:hover .mask {
+    animation-play-state: $selector;
+  }
+
   @keyframes rota {
     0% { transform: rotate(0deg);
     }
@@ -88,4 +97,4 @@
     75% { background-size: 100px 100px; }
   }
 }
-@include timer('.wrapper', 5, 100%,  #0084fe, '1vh solid  #0084fe');
+@include timer('.wrapper', 5, 100%,  #0084fe, '1vh solid  #0084fe',paused,paused);

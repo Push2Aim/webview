@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import Clock from "./Clock";
 
 class Warmup extends Component {
     render() {
@@ -13,7 +14,11 @@ class Warmup extends Component {
                             <a className="close-button-warmup w-button" data-ix="hide-button-warmup" href="#">X</a></div>
                     </div>
                     <div className="timer-button-boss">
-                        <div className="timer-button-supervisor"><a className="timer w-inline-block" href="#"></a><a
+                        <div className="timer-button-supervisor">
+                            <a className="timer w-inline-block" href="#">
+                                <Clock duration={this.props.data.timer}/>
+                            </a>
+                            <a
                             className="help-warmup w-button" data-ix="show-and-hide-warmup" href="#">Help</a></div>
                     </div>
                     <div className="pic-boss">

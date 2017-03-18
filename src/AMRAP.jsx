@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import Clock from "./Clock";
 
 class AMRAP extends Component {
     render() {
@@ -66,7 +67,9 @@ class AMRAP extends Component {
 
                     <div className="timer-button-boss">
                         <div className="amraphelp timer-button-supervisor">
-                            <a className="timer w-inline-block" href="#"></a>
+                            <a className="timer w-inline-block" href="#">
+                                <Clock duration={this.props.data.timer}/>
+                            </a>
                             <a className="help-stretching w-button" data-ix="show-and-hide-amrap-workout" href="#">Help</a>
                         </div>
                     </div>

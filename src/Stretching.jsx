@@ -6,12 +6,12 @@ class Stretching extends Component {
         return (
             <div className="w-slide">
                 <div className="content-parent">
-                    <div className="for-stretching sidebar-stretching" data-ix="display-none-on-load-stretching">
-                        <div className="close-button-boss">
-                            <div className="duplicates stretching-text tut-spread"><h1 className="heading">{this.props.data.texts.heading}</h1>
-                                <p className="explanation">{this.props.data.texts.explanation}</p></div>
-                            <a className="close-button-stretching w-button" data-ix="hide-button" href="#">X</a></div>
-                    </div>
+                    {/*<div className="for-stretching sidebar-stretching" data-ix="display-none-on-load-stretching">*/}
+                        {/*<div className="close-button-boss">*/}
+                            {/*<div className="duplicates stretching-text tut-spread"><h1 className="heading">{this.props.data.texts.heading}</h1>*/}
+                                {/*<p className="explanation">{this.props.data.texts.explanation}</p></div>*/}
+                            {/*<a className="close-button-stretching w-button" data-ix="hide-button" href="#">X</a></div>*/}
+                    {/*</div>*/}
                     <div className="timer-button-boss">
                         <div className="timer-button-supervisor">
                             <a className="timer w-inline-block" href="#">
