@@ -85,7 +85,7 @@ const config = [
                     }
                 ],
                 "images": {
-                    "workout": "http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c352892387178e61460262_Trophy.png",
+                    "workout": "http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c28dd12a203f5d54fff426_7%20min%20AMRAP%20example.png",
                 }
             },
             {
