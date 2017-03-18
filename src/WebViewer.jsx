@@ -1,24 +1,17 @@
 import React, {Component} from "react";
-import ViewText from "./ViewText.jsx";
-import ViewStretch from "./ViewStretch.jsx";
-import ViewAMRAPInfo from "./ViewAMRAPInfo.jsx";
-import ViewAMRAP from "./ViewAMRAP.jsx";
-import ViewTrophy from "./ViewTrophy.jsx";
 import config from "./config";
 import "./webflow.css";
-
-import Welcome from "./Welcome"
-import Warmup from "./Warmup"
-import Stretching from "./Stretching"
-import AMRAPtut from "./AMRAPtut"
-import AMRAP from "./AMRAP"
-import Trophy from "./Trophy"
+import Welcome from "./Welcome";
+import Warmup from "./Warmup";
+import Stretching from "./Stretching";
+import AMRAPtut from "./AMRAPtut";
+import AMRAP from "./AMRAP";
+import Trophy from "./Trophy";
 
 class WebViewer extends Component {
     constructor(props, context) {
         super(props, context);
         this.state = {
-            mIndex: 0,
             cIndex: this.getCIndex(props.location, props.duration)
         }
     }
@@ -29,13 +22,6 @@ class WebViewer extends Component {
             <div className="slider w-slider" data-animation="slide" data-duration="400" data-easing="ease-in"
                  data-infinite="1">
                 <div className="w-slider-mask">
-                    {/*<Welcome/>*/}
-                    {/*<Warmup/>*/}
-                    {/*<Stretching/>*/}
-                    {/*<AMRAPtut/>*/}
-                    {/*<AMRAP/>*/}
-                    {/*<Trophy/>*/}
-
                     {this.buildView(this.state.cIndex)}
                 </div>
                 <div className="slide-nav w-round w-slider-nav"></div>
