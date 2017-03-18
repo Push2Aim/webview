@@ -10,3 +10,6 @@ body {
 .w-slider-dot{
   display: none !important;
 }
+.w-slider-arrow-left{
+    display: none;
+}
