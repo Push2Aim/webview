@@ -10,7 +10,7 @@ const config = [
                     "trophy_pic": "http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c352892387178e61460262_Trophy.png",
                 },
                 "texts": {
-                    "title": "1 Step Closer To YourGoal!",
+                    "title": "1 Step Closer To Your Goal!",
                     "text": "I'm happy for you and hope you keep going.",
                 }
             },
