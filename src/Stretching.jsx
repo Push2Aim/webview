@@ -7,9 +7,8 @@ class Stretching extends Component {
                 <div className="content-parent">
                     <div className="for-stretching sidebar-stretching" data-ix="display-none-on-load-stretching">
                         <div className="close-button-boss">
-                            <div className="duplicates stretching-text tut-spread"><h1 className="heading">Stretching</h1>
-                                <p className="explanation">Take your time. Breathe all the time. Don't spoil yourself, but
-                                    don't stretch to agony.</p></div>
+                            <div className="duplicates stretching-text tut-spread"><h1 className="heading">{this.props.data.texts.heading}</h1>
+                                <p className="explanation">{this.props.data.texts.explanation}</p></div>
                             <a className="close-button-stretching w-button" data-ix="hide-button" href="#">X</a></div>
                     </div>
                     <div className="timer-button-boss">
@@ -17,9 +16,10 @@ class Stretching extends Component {
                             className="help-stretching w-button" data-ix="show-and-hide-stretching" href="#">Help</a>
                         </div>
                     </div>
-                    <div className="pic-boss"><img className="shoulder-stretch" sizes="(max-width: 2156px) 55vw, 1186px"
-                                                   src="http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c4617357a2703f67303098_ShouldersWeb.png"
-                                                   srcset="http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c4617357a2703f67303098_ShouldersWeb-p-500x802.png 500w, http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c4617357a2703f67303098_ShouldersWeb-p-800x1283.png 800w, http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c4617357a2703f67303098_ShouldersWeb-p-1080x1732.png 1080w, http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c4617357a2703f67303098_ShouldersWeb.png 1186w"/>
+                    <div className="pic-boss">
+                        <img className="shoulder-stretch" sizes="(max-width: 2156px) 55vw, 1186px"
+                             src={this.props.data.images.pic}
+                        />
                     </div>
                 </div>
             </div>
