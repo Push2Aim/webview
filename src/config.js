@@ -56,7 +56,7 @@ const config = [
                 "texts": {
                     "heading": "AMRAP",
                     "explanation": "Those 3 exercises form 1 round. Do As Many Rounds As Possible within 7 min.",
-                    "tutButton": "How to do&nbsp;those 3 exercises",
+                    "tutButton": "How to do those 3 exercises",
                     "howTo": "Within 20 min, do as many rounds as you can, consisting of the shown 5 exercises.",
                 },
                 "timer": 10,
