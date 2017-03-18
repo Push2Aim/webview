@@ -9,11 +9,9 @@ class Welcome extends Component {
                     <div className="w-slider-mask">
                         <div className="w-slide">
                             <div className="content-parent welcome">
-                                <div className="tut-welcome-supervisor" data-ix="slowly-move"><h1
-                                    className="_1-step-closer welcome-to">Welcome to your home workout!</h1>
-                                    <p className="welcome-what-you-do">You're going to warm up doing cardio, then do a
-                                        stretching routine twice, and lastly finish it off with a challenging
-                                        workout.</p></div>
+                                <div className="tut-welcome-supervisor" data-ix="slowly-move">
+                                    <h1 className="_1-step-closer welcome-to">{this.props.data.texts.title}</h1>
+                                    <p className="welcome-what-you-do">{this.props.data.texts.text}</p></div>
                             </div>
                         </div>
                         <div className="w-slide">

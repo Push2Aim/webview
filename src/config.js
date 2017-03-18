@@ -79,18 +79,18 @@ const config = [
             //         "pic": "http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c4617357a2703f67303098_ShouldersWeb.png",
             //     },
             // },
-            {
-                "type": "Warmup",
-                "title": "Warmup",
-                "texts": {
-                    "heading": "Warmup",
-                    "explanation": "Don't go too fast, but I want to see your pulse high after. Let's go!",
-                },
-                "timer": 10,
-                "images": {
-                    "pic": "http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c4617357a2703f67303098_ShouldersWeb.png",
-                },
-            },
+            // {
+            //     "type": "Warmup",
+            //     "title": "Warmup",
+            //     "texts": {
+            //         "heading": "Warmup",
+            //         "explanation": "Don't go too fast, but I want to see your pulse high after. Let's go!",
+            //     },
+            //     "timer": 10,
+            //     "images": {
+            //         "pic": "http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c4617357a2703f67303098_ShouldersWeb.png",
+            //     },
+            // },
             {
                 "type": "Welcome",
                 "title": "Welcome",
