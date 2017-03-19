@@ -26,7 +26,6 @@ class WebViewer extends Component {
         return (
             <div className="slider w-slider" data-animation="slide" data-duration="400" data-easing="ease-in"
                  data-infinite="1">
-                <button onClick={this.nextSlide.bind(this)}> Awesome Start</button>
                 <div className="w-slider-mask">
                     {this.buildView(this.state.cIndex)}
                 </div>
@@ -36,7 +35,7 @@ class WebViewer extends Component {
                 <div className="w-slider-arrow-right" id="nextSlide">
                     <div className="w-icon-slider-right"></div>
                 </div>
-                <div className="start-workout-button" data-ix="start-button-blink">
+                <div onClick={this.nextSlide.bind(this)} className="start-workout-button" data-ix="start-button-blink">
                     <div>Start</div>
                 </div>
                 <div className="w-round w-slider-nav" id="SliderNav"></div>
