@@ -7,12 +7,12 @@ body {
 .w-webflow-badge{
   display: none !important;
 }
-.w-slider-dot{
-  display: none !important;
+.w-slider-dot,
+.w-slider-arrow-left,
+.w-slider-arrow-right {
+    /*display: none;*/
 }
-.w-slider-arrow-left{
-    display: none;
-}
+
 #SliderInSliderNav{
   display: none;
 }
