@@ -13,3 +13,6 @@ body {
 .w-slider-arrow-left{
     display: none;
 }
+#SliderInSliderNav{
+  display: none;
+}

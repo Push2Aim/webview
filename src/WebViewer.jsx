@@ -8,16 +8,21 @@ import AMRAP from "./AMRAP";
 import Trophy from "./Trophy";
 // import "./webflow.css";
 
+const $ = window.$;
+
 class WebViewer extends Component {
+
     constructor(props, context) {
         super(props, context);
         this.state = {
-            cIndex: this.getCIndex(props.location, props.duration)
+            cIndex: this.getCIndex(props.location, props.duration),
+            sliderIndex: 0
         }
     }
 
     render() {
-        document.title = this.props.location + this.props.duration;
+        document.title = config[this.state.cIndex].data[this.state.sliderIndex].title;
+
         return (
             <div className="slider w-slider" data-animation="slide" data-duration="400" data-easing="ease-in"
                  data-infinite="1">
@@ -30,7 +35,7 @@ class WebViewer extends Component {
                 <div className="start-workout-button w-slider-arrow-right" data-ix="start-button-blink">
                     <div>Start</div>
                 </div>
-                <div className="w-round w-slider-nav"></div>
+                <div className="w-round w-slider-nav" id="SliderNav"></div>
             </div>
         );
     }
@@ -62,10 +67,21 @@ class WebViewer extends Component {
         return this.mapWorkout(config[cIndex].data[mIndex]);
     }
 
-    handleClick() {
+    updateSliderIndex() {
+        console.log("updateSliderIndex");
+        // $(".start-workout-button").trigger("tap");
         this.setState({
-            mIndex: this.state.mIndex + 1
+            sliderIndex: this.getSliderIndex()
         });
+    }
+
+    getSliderIndex() {
+        let dots = $("#SliderNav").children();
+        for (let i = 0; i < dots.length; i++) {
+            if (dots.eq(i).hasClass("w-active"))
+                return i;
+        }
+        return 0;
     }
 
     getCIndex(location, duration) {

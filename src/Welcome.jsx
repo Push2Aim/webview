@@ -82,7 +82,7 @@ class Welcome extends Component {
                     <div className="left-arrow-2 w-slider-arrow-left">
                         <div className="w-icon-slider-left"></div>
                     </div>
-                    <div className="w-round w-slider-nav"></div>
+                    <div className="w-round w-slider-nav" id="SliderInSliderNav"></div>
                 </div>
             </div>
         );
