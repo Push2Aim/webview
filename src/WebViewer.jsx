@@ -26,13 +26,17 @@ class WebViewer extends Component {
         return (
             <div className="slider w-slider" data-animation="slide" data-duration="400" data-easing="ease-in"
                  data-infinite="1">
+                <button onClick={this.nextSlide.bind(this)}> Awesome Start</button>
                 <div className="w-slider-mask">
                     {this.buildView(this.state.cIndex)}
                 </div>
                 <div className="w-slider-arrow-left">
                     <div className="w-icon-slider-left"></div>
                 </div>
-                <div className="start-workout-button w-slider-arrow-right" data-ix="start-button-blink">
+                <div className="w-slider-arrow-right" id="nextSlide">
+                    <div className="w-icon-slider-right"></div>
+                </div>
+                <div onClick={this.handleClick.bind(this)} className="start-workout-button" data-ix="start-button-blink">
                     <div>Start</div>
                 </div>
                 <div className="w-round w-slider-nav" id="SliderNav"></div>
@@ -67,9 +71,12 @@ class WebViewer extends Component {
         return this.mapWorkout(config[cIndex].data[mIndex]);
     }
 
+    nextSlide() {
+        $("#nextSlide").trigger("tap");
+        this.updateSliderIndex()
+    }
+
     updateSliderIndex() {
-        console.log("updateSliderIndex");
-        // $(".start-workout-button").trigger("tap");
         this.setState({
             sliderIndex: this.getSliderIndex()
         });
@@ -119,7 +126,6 @@ class WebViewer extends Component {
             }
         else return "home";
     }
-
 }
 
 export default WebViewer;
