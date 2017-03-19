@@ -36,7 +36,7 @@ class WebViewer extends Component {
                 <div className="w-slider-arrow-right" id="nextSlide">
                     <div className="w-icon-slider-right"></div>
                 </div>
-                <div onClick={this.handleClick.bind(this)} className="start-workout-button" data-ix="start-button-blink">
+                <div className="start-workout-button" data-ix="start-button-blink">
                     <div>Start</div>
                 </div>
                 <div className="w-round w-slider-nav" id="SliderNav"></div>
