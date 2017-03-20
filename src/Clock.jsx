@@ -10,7 +10,7 @@ class Clock extends Component {
             started: false,
             countdown: props.duration,
             waitStarted: false,
-            wait: props.wait || 5,
+            wait: this.props.wait || 5,
         }
     }
 
@@ -52,17 +52,17 @@ class Clock extends Component {
     }
 
     tick() {
-        if (this.isOnCurrentSlide())
-            if (this.finishedWaiting()) {
-                this.setState((prevState, props) => ({
+        if (this.finishedWaiting()) {
+            this.setState((prevState, props) => ({
                 countdown: prevState.countdown - 1
             }));
-                if (this.state.countdown < 0) {
+
+            if (this.state.countdown < 0) {
                 this.setState({started: false});
                 this.nextSlide();
             }
-            } else
-                this.setState({waitStarted: true})
+        } else if (this.isOnCurrentSlide())
+            this.setState({waitStarted: true})
     }
 
     isOnCurrentSlide() {
