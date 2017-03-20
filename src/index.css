@@ -16,3 +16,8 @@ body {
 #SliderInSliderNav{
   display: none;
 }
+
+.get-ready{
+  position: absolute;
+  z-index: 999;
+}
