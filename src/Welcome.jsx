@@ -11,6 +11,7 @@ class Welcome extends Component {
                     <div className="w-slider-mask">
                         <div className="w-slide">
                             <div className="content-parent welcome">
+                                <div className="turquoise-bg" data-ix="slowly-blend-in"></div>
                                 <div className="tut-welcome-supervisor" data-ix="slowly-move-and-scale"><h1
                                     className="_1-step-closer welcome-to">{this.props.data.texts.title}</h1>
                                     <p className="welcome-what-you-do">{this.props.data.texts.text}</p></div>
@@ -27,7 +28,8 @@ class Welcome extends Component {
                         <div className="w-slide">
                             <div className="behind-stretch fg"></div>
                             <div className="fg"></div>
-                            <div className="content-parent welcome-stretching-tuts"><img className="neck-stretch" sizes="100vw"
+                            <div className="content-parent welcome-stretching-tuts"><img className="neck-stretch"
+                                                                                         sizes="100vw"
                                                                                          src="http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c4692f8712539d1de75694_NeckWeb.png"
                                                                                          srcset="http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c4692f8712539d1de75694_NeckWeb-p-500x850.png 500w, http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c4692f8712539d1de75694_NeckWeb-p-800x1360.png 800w, http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c4692f8712539d1de75694_NeckWeb-p-1080x1836.png 1080w, http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c4692f8712539d1de75694_NeckWeb.png 1084w"/><img
                                 className="magni-body-part-to-burn" data-ix="magnifier-disappear" sizes="100vw"
