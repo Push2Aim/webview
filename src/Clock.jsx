@@ -25,8 +25,8 @@ class Clock extends Component {
                      style={{animation: this.state.animations[2]}}></div>
                 <div className="mask"
                      style={{animation: this.state.animations[3]}}></div>
-                <div>wait {this.state.wait}</div>
-                <div>timer {this.state.countdown}</div>
+                <div>w {this.state.wait}</div>
+                <div>t {this.state.countdown}</div>
             </div>
         );
     }
@@ -84,7 +84,7 @@ class Clock extends Component {
     }
 
     nextSlide() {
-        if(this.props.enableNext)
+        if(!this.props.disableNext)
             window.$("#nextSlide").trigger("tap");
         this.updateSliderIndex();
     }
