@@ -6,6 +6,7 @@ const config = [
             {
                 "type": "Welcome",
                 "title": "Welcome",
+                "timer": 5,
                 "texts": {
                     "title": "Welcome to your home workout!",
                     "text": "You're going to warm up doing cardio, then do a stretching routine twice, and lastly finish it off with a challenging workout.",

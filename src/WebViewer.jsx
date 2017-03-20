@@ -64,7 +64,7 @@ class WebViewer extends Component {
     mapWorkout(data, sIndex, cIndex) {
         switch (data.type) {
             case "Welcome":
-                return  <Welcome data={data}/>;
+                return  <Welcome data={data} sIndex={sIndex}/>;
             case "Warmup":
                 return <Warmup data={data} cIndex={cIndex} sIndex={sIndex}/>;
             case "Stretching":

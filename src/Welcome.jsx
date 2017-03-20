@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import Clock from "./Clock";
 
 class Welcome extends Component {
     render() {
@@ -64,8 +65,11 @@ class Welcome extends Component {
                                                 className="part-to-burn this-timer-tutorial">This timer waits 5 sec for
                                                 you to get ready...</p></div>
                                         </div>
-                                        <div className="timer-button-supervisor timer-button-supervisor-tut"><a
-                                            className="timer w-inline-block" href="#"></a>
+                                        <div className="timer-button-supervisor timer-button-supervisor-tut">
+                                            <a
+                                            className="timer w-inline-block" href="#">
+                                                <Clock enableNext={false} wait={44} duration={this.props.data.timer} cIndex={this.props.cIndex} sIndex={this.props.sIndex}/>
+                                            </a>
                                             <div className="invisi-help-button-replacement"></div>
                                         </div>
                                     </div>

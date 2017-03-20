@@ -8,7 +8,9 @@ class Clock extends Component {
         this.state = {
             animations: ["", "", "", ""],
             started: false,
-            countdown: props.duration
+            countdown: props.duration,
+            waitStarted: false,
+            wait: props.wait || 5,
         }
     }
 
@@ -23,13 +25,14 @@ class Clock extends Component {
                      style={{animation: this.state.animations[2]}}></div>
                 <div className="mask"
                      style={{animation: this.state.animations[3]}}></div>
+                <div>wait {this.state.wait}</div>
+                <div>timer {this.state.countdown}</div>
             </div>
         );
     }
 
     setAnimations() {
         this.setState({
-            started: true,
             animations: [
                 "size " + this.props.duration + "s cubic-bezier(0.86, 0, 0.07, 1) 1 forwards",
                 "rota " + this.props.duration + "s linear 1 forwards",
@@ -49,20 +52,40 @@ class Clock extends Component {
     }
 
     tick() {
-        if (this.state.started) {
-            this.setState((prevState, props) => ({
+        if (this.isOnCurrentSlide())
+            if (this.finishedWaiting()) {
+                this.setState((prevState, props) => ({
                 countdown: prevState.countdown - 1
             }));
-            if (this.state.countdown < 0) {
+                if (this.state.countdown < 0) {
                 this.setState({started: false});
                 this.nextSlide();
             }
-        } else if (this.props.sIndex === this.getSliderIndex())
-            this.setAnimations();
+            } else
+                this.setState({waitStarted: true})
+    }
+
+    isOnCurrentSlide() {
+        return this.props.sIndex === this.getSliderIndex();
+    }
+
+    finishedWaiting() {
+        if (this.state.waitStarted) {
+            this.setState((prevState, props) => ({
+                wait: prevState.wait - 1
+            }));
+            if (this.state.wait < 0) {
+                this.setState({waitStarted: false, started: true});
+                this.setAnimations();
+            }
+        }
+
+        return this.state.started;
     }
 
     nextSlide() {
-        window.$("#nextSlide").trigger("tap");
+        if(this.props.enableNext)
+            window.$("#nextSlide").trigger("tap");
         this.updateSliderIndex();
     }
 
