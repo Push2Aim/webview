@@ -8,41 +8,35 @@ import AMRAP from "./AMRAP";
 import Trophy from "./Trophy";
 // import "./webflow.css";
 
-const $ = window.$;
-
 class WebViewer extends Component {
 
     constructor(props, context) {
         super(props, context);
         this.state = {
             cIndex: this.getCIndex(props.location, props.duration),
-            sliderIndex: 0
         }
     }
 
     nextSlide() {
-        $("#nextSlide").trigger("tap");
+        window.$("#nextSlide").trigger("tap");
         this.updateSliderIndex()
     }
 
     updateSliderIndex() {
-        this.setState({
-            sliderIndex: this.getSliderIndex()
-        });
-    }
+        let sliderIndex = 0;
+        let dots = window.$("#SliderNav").children();
+        for (let i = 0; i < dots.length; i++)
+            if (dots.eq(i).hasClass("w-active")){
+                sliderIndex = i;
+                break;
+            }
 
-    getSliderIndex() {
-        let dots = $("#SliderNav").children();
-        for (let i = 0; i < dots.length; i++) {
-            if (dots.eq(i).hasClass("w-active"))
-                return i;
-        }
-        return 0;
+        document.title = config[this.state.cIndex].data[sliderIndex].title;
+
     }
 
     render() {
-        document.title = config[this.state.cIndex].data[this.state.sliderIndex].title;
-
+        this.updateSliderIndex();
         return (
             <div className="slider w-slider" data-animation="slide" data-duration="400" data-easing="ease-in"
                  data-infinite="1">
