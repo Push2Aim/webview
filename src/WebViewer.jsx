@@ -56,10 +56,12 @@ class WebViewer extends Component {
     }
 
     buildView(cIndex) {
-        return config[cIndex].data.map(this.mapWorkout);
+        return config[cIndex].data.map((data) =>
+            this.mapWorkout(data, this.state.cIndex
+        ));
     }
 
-    mapWorkout(data, cIndex = this.state.cIndex) {
+    mapWorkout(data, cIndex) {
         switch (data.type) {
             case "Welcome":
                 return  <Welcome data={data}/>;

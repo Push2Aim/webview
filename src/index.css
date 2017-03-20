@@ -10,7 +10,7 @@ body {
 .w-slider-dot,
 .w-slider-arrow-left,
 .w-slider-arrow-right {
-    /*display: none;*/
+    display: none;
 }
 
 #SliderInSliderNav{

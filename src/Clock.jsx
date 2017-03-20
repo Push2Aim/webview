@@ -61,7 +61,7 @@ class Clock extends Component {
 
     nextSlide() {
         window.$("#nextSlide").trigger("tap");
-        this.updateSliderIndex()
+        this.updateSliderIndex();
     }
 
     updateSliderIndex() {
