@@ -26,6 +26,7 @@ class Clock extends Component {
             </div>
         );
     }
+
     setAnimations() {
         this.setState({
             started: true,
@@ -56,7 +57,8 @@ class Clock extends Component {
                 this.setState({started: false});
                 this.nextSlide();
             }
-        }
+        } else if (this.props.sIndex === this.getSliderIndex())
+            this.setAnimations();
     }
 
     nextSlide() {
@@ -65,14 +67,17 @@ class Clock extends Component {
     }
 
     updateSliderIndex() {
-        let sliderIndex = 0;
+        let sliderIndex = this.getSliderIndex();
+        document.title = config[this.props.cIndex].data[sliderIndex].title;
+    }
+
+    getSliderIndex() {
         let dots = window.$("#SliderNav").children();
         for (let i = 0; i < dots.length; i++)
             if (dots.eq(i).hasClass("w-active")) {
-                sliderIndex = i;
-                break;
+                return i;
             }
-        document.title = config[this.props.cIndex].data[sliderIndex].title;
+        return 0;
     }
 }
 

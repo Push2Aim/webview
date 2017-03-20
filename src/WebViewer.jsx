@@ -56,23 +56,23 @@ class WebViewer extends Component {
     }
 
     buildView(cIndex) {
-        return config[cIndex].data.map((data) =>
-            this.mapWorkout(data, this.state.cIndex
-        ));
+        return config[cIndex].data.map((data, index) =>
+            this.mapWorkout(data, index, this.state.cIndex)
+        );
     }
 
-    mapWorkout(data, cIndex) {
+    mapWorkout(data, sIndex, cIndex) {
         switch (data.type) {
             case "Welcome":
                 return  <Welcome data={data}/>;
             case "Warmup":
-                return <Warmup data={data} cIndex={cIndex}/>;
+                return <Warmup data={data} cIndex={cIndex} sIndex={sIndex}/>;
             case "Stretching":
-                return  <Stretching data={data} cIndex={cIndex}/>;
+                return  <Stretching data={data} cIndex={cIndex} sIndex={sIndex}/>;
             case "AMRAPtut":
                 return <AMRAPtut data={data} cIndex={cIndex}/>;
             case "AMRAP":
-                return  <AMRAP data={data} cIndex={cIndex}/>;
+                return  <AMRAP data={data} cIndex={cIndex} sIndex={sIndex}/>;
             case "Trophy":
                 return  <Trophy data={data}/>;
             default:

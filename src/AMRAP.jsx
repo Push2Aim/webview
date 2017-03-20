@@ -68,7 +68,7 @@ class AMRAP extends Component {
                     <div className="timer-button-boss">
                         <div className="amraphelp timer-button-supervisor">
                             <a className="timer w-inline-block" href="#">
-                                <Clock duration={this.props.data.timer} cIndex={this.props.cIndex}/>
+                                <Clock duration={this.props.data.timer} cIndex={this.props.cIndex} sIndex={this.props.sIndex}/>
                             </a>
                             <a className="help-stretching w-button" data-ix="show-and-hide-amrap-workout" href="#">Help</a>
                         </div>

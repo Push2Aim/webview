@@ -15,7 +15,7 @@ class Stretching extends Component {
                     <div className="timer-button-boss">
                         <div className="timer-button-supervisor">
                             <a className="timer w-inline-block" href="#">
-                                <Clock duration={this.props.data.timer} cIndex={this.props.cIndex}/>
+                                <Clock duration={this.props.data.timer} cIndex={this.props.cIndex} sIndex={this.props.sIndex}/>
                             </a>
                             <a className="help-stretching w-button" data-ix="show-and-hide-stretching" href="#">Help</a>
                         </div>
