@@ -89,19 +89,6 @@ class AMRAP extends Component {
 
     nextSlide() {
         $("#nextSlide").trigger("tap");
-        this.updateSliderIndex()
-    }
-
-    updateSliderIndex() {
-        // document.title = config[this.props.cIndex].data[this.getSliderIndex].title;
-    }
-
-    getSliderIndex() {
-        let dots = $("#SliderNav").children();
-        for (let i = 0; i < dots.length; i++)
-            if (dots.eq(i).hasClass("w-active"))
-            return i;
-        return 0;
     }
 }
 

@@ -30,9 +30,7 @@ class WebViewer extends Component {
                 sliderIndex = i;
                 break;
             }
-
         document.title = config[this.state.cIndex].data[sliderIndex].title;
-
     }
 
     render() {
@@ -61,18 +59,18 @@ class WebViewer extends Component {
         return config[cIndex].data.map(this.mapWorkout);
     }
 
-    mapWorkout(data, index = this.state.cIndex) {
+    mapWorkout(data, cIndex = this.state.cIndex) {
         switch (data.type) {
             case "Welcome":
                 return  <Welcome data={data}/>;
             case "Warmup":
-                return  <Warmup data={data}/>;
+                return <Warmup data={data} cIndex={cIndex}/>;
             case "Stretching":
-                return  <Stretching data={data}/>;
+                return  <Stretching data={data} cIndex={cIndex}/>;
             case "AMRAPtut":
-                return <AMRAPtut data={data} cIndex={index}/>;
+                return <AMRAPtut data={data} cIndex={cIndex}/>;
             case "AMRAP":
-                return  <AMRAP data={data}/>;
+                return  <AMRAP data={data} cIndex={cIndex}/>;
             case "Trophy":
                 return  <Trophy data={data}/>;
             default:
