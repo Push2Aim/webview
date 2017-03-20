@@ -52,7 +52,7 @@ const config = [
             },
             {
                 "type": "AMRAPtut",
-                "title": "AMRAPtut",
+                "title": "AMRAP",
                 "texts": {
                     "heading": "AMRAP",
                     "explanation": "Those 3 exercises form 1 round. Do As Many Rounds As Possible within 7 min.",

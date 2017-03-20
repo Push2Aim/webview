@@ -1,5 +1,7 @@
 import React, {Component} from "react";
+import config from "./config";
 
+const $ = window.$;
 class AMRAP extends Component {
     render() {
         return (
@@ -69,7 +71,8 @@ class AMRAP extends Component {
                                 <div className="help-supervisor"><a className="help-amrap-explanation w-button"
                                                                     data-ix="show-and-hide-amrap-explanation"
                                                                     href="#">Help</a></div>
-                                <div className="start-supervisor"><a className="start-button w-button">Start</a>
+                                <div onClick={this.nextSlide.bind(this)}
+                                     className="start-supervisor"><a className="start-button w-button">Start</a>
                                 </div>
                             </div>
                         </div>
@@ -82,6 +85,23 @@ class AMRAP extends Component {
                 </div>
             </div>
         );
+    }
+
+    nextSlide() {
+        $("#nextSlide").trigger("tap");
+        this.updateSliderIndex()
+    }
+
+    updateSliderIndex() {
+        // document.title = config[this.props.cIndex].data[this.getSliderIndex].title;
+    }
+
+    getSliderIndex() {
+        let dots = $("#SliderNav").children();
+        for (let i = 0; i < dots.length; i++)
+            if (dots.eq(i).hasClass("w-active"))
+            return i;
+        return 0;
     }
 }
 

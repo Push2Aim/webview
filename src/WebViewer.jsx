@@ -20,6 +20,26 @@ class WebViewer extends Component {
         }
     }
 
+    nextSlide() {
+        $("#nextSlide").trigger("tap");
+        this.updateSliderIndex()
+    }
+
+    updateSliderIndex() {
+        this.setState({
+            sliderIndex: this.getSliderIndex()
+        });
+    }
+
+    getSliderIndex() {
+        let dots = $("#SliderNav").children();
+        for (let i = 0; i < dots.length; i++) {
+            if (dots.eq(i).hasClass("w-active"))
+                return i;
+        }
+        return 0;
+    }
+
     render() {
         document.title = config[this.state.cIndex].data[this.state.sliderIndex].title;
 
@@ -47,7 +67,7 @@ class WebViewer extends Component {
         return config[cIndex].data.map(this.mapWorkout);
     }
 
-    mapWorkout(data) {
+    mapWorkout(data, index = this.state.cIndex) {
         switch (data.type) {
             case "Welcome":
                 return  <Welcome data={data}/>;
@@ -56,7 +76,7 @@ class WebViewer extends Component {
             case "Stretching":
                 return  <Stretching data={data}/>;
             case "AMRAPtut":
-                return  <AMRAPtut data={data}/>;
+                return <AMRAPtut data={data} cIndex={index}/>;
             case "AMRAP":
                 return  <AMRAP data={data}/>;
             case "Trophy":
@@ -70,25 +90,6 @@ class WebViewer extends Component {
         return this.mapWorkout(config[cIndex].data[mIndex]);
     }
 
-    nextSlide() {
-        $("#nextSlide").trigger("tap");
-        this.updateSliderIndex()
-    }
-
-    updateSliderIndex() {
-        this.setState({
-            sliderIndex: this.getSliderIndex()
-        });
-    }
-
-    getSliderIndex() {
-        let dots = $("#SliderNav").children();
-        for (let i = 0; i < dots.length; i++) {
-            if (dots.eq(i).hasClass("w-active"))
-                return i;
-        }
-        return 0;
-    }
 
     getCIndex(location, duration) {
         location = this.parsLocation(location);
