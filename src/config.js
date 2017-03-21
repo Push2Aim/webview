@@ -14,16 +14,27 @@ const config = [
                 "need":[
                     {
                         "text": "chair",
-                        "src": "http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58cc7a15361730277f802a1e_chair.png"
-                    },{
+                        "src": "/images/chair.png"
+                    },
+                    {
                         "text": "chair",
-                        "src": "http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58cc7a15361730277f802a1e_chair.png"
-                    },{
+                        "src": "/images/chair.png"
+                    },
+                    {
                         "text": "chair",
-                        "src": "http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58cc7a15361730277f802a1e_chair.png"
-                    },{
+                        "src": "/images/chair.png"
+                    },
+                    {
                         "text": "chair",
-                        "src": "http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58cc7a15361730277f802a1e_chair.png"
+                        "src": "/images/chair.png"
+                    },
+                    {
+                        "text": "chair",
+                        "src": "/images/chair.png"
+                    },
+                    {
+                        "text": "chair",
+                        "src": "/images/chair.png"
                     },
                 ]
             },
@@ -74,7 +85,7 @@ const config = [
                     },
                 ],
                 "images": {
-                    "workout": "http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c28dd12a203f5d54fff426_7%20min%20AMRAP%20example.png",
+                    "workout": "/images/AMRAP.jpg",
                 }
             },
             {
@@ -101,14 +112,14 @@ const config = [
                     }
                 ],
                 "images": {
-                    "workout": "http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c28dd12a203f5d54fff426_7%20min%20AMRAP%20example.png",
+                    "workout": "/images/AMRAP.jpg",
                 }
             },
             {
                 "type": "Trophy",
                 "title": "Congratulations",
                 "images": {
-                    "trophy_pic": "http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c352892387178e61460262_Trophy.png",
+                    "trophy_pic": "/images/Trophy.png",
                 },
                 "texts": {
                     "title": "1 Step Closer To Your Goal!",

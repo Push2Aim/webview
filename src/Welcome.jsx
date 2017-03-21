@@ -30,14 +30,14 @@ class Welcome extends Component {
                             <div className="fg"></div>
                             <div className="content-parent welcome-stretching-tuts">
                                 <img className="neck-stretch" role="presentation" sizes="100vw"
-                                     src="http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c4692f8712539d1de75694_NeckWeb.png"
-                                     srcset="http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c4692f8712539d1de75694_NeckWeb-p-500x850.png 500w, http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c4692f8712539d1de75694_NeckWeb-p-800x1360.png 800w, http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c4692f8712539d1de75694_NeckWeb-p-1080x1836.png 1080w, http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c4692f8712539d1de75694_NeckWeb.png 1084w"/>
+                                     src="/images/NeckWeb.png"
+                                />
                                 <img className="magni-body-part-to-burn" role="presentation" data-ix="magnifier-disappear" sizes="100vw"
-                                src="http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c58898fdbad0f237849f41_BurnMagnifier.png"
-                                srcset="http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c58898fdbad0f237849f41_BurnMagnifier-p-500x850.png 500w, http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c58898fdbad0f237849f41_BurnMagnifier-p-800x1360.png 800w, http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c58898fdbad0f237849f41_BurnMagnifier-p-1080x1836.png 1080w, http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c58898fdbad0f237849f41_BurnMagnifier.png 1084w"/>
+                                src="/images/BurnMagnifier.png"
+                                />
                                 <img className="magni-body-part-to-move" role="presentation" data-ix="magnifier-appear" sizes="100vw"
-                                src="http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c81dbe95d009d84db1d669_MoveMagnifier.png"
-                                srcset="http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c81dbe95d009d84db1d669_MoveMagnifier-p-500x850.png 500w, http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c81dbe95d009d84db1d669_MoveMagnifier-p-800x1360.png 800w, http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c81dbe95d009d84db1d669_MoveMagnifier-p-1080x1836.png 1080w, http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c81dbe95d009d84db1d669_MoveMagnifier.png 1084w"/>
+                                src="/images/MoveMagnifier.png"
+                                />
                             </div>
                             <div className="tut-texts-father tut-texts-father-in-stretching"><h1
                                 className="stretching-title">
@@ -78,8 +78,8 @@ class Welcome extends Component {
                                 </div>
                                 <div className="pic-boss pic-boss-in-tutorial">
                                     <img className="shoulder-stretch" role="presentation" sizes="(max-width: 2156px) 55vw, 1186px"
-                                         src="http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c4617357a2703f67303098_ShouldersWeb.png"
-                                         srcset="http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c4617357a2703f67303098_ShouldersWeb-p-500x802.png 500w, http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c4617357a2703f67303098_ShouldersWeb-p-800x1283.png 800w, http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c4617357a2703f67303098_ShouldersWeb-p-1080x1732.png 1080w, http://uploads.webflow.com/58c062e37f6bd43c050cce7f/58c4617357a2703f67303098_ShouldersWeb.png 1186w"/>
+                                         src="/images/ShouldersWeb.png"
+                                    />
                                 </div>
                             </div>
                             <div className="tut-texts-father"></div>
