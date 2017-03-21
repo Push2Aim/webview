@@ -26,6 +26,7 @@ class Clock extends Component {
                 <div className="mask"
                      style={{animation: this.state.animations[3]}}></div>
                 <div className="get-ready" data-ix="get-ready-appear-disappear">get ready</div>
+                <h1>{this.state.countdown}</h1>
             </div>
         );
     }
