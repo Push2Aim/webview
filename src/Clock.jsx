@@ -90,6 +90,7 @@ class Clock extends Component {
 
     updateSliderIndex() {
         let sliderIndex = this.getSliderIndex();
+        if (this.props.cIndex)
         document.title = config[this.props.cIndex].data[sliderIndex].title;
     }
 
