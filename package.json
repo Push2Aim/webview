@@ -2,7 +2,6 @@
   "name": "react_webview",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://push2aim.github.io/webview/",
   "dependencies": {
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
