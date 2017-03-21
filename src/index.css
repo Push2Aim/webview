@@ -1,11 +1,11 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
 
 .w-webflow-badge{
-  display: none !important;
+    display: none !important;
 }
 .w-slider-dot,
 .w-slider-arrow-left,
@@ -14,10 +14,18 @@ body {
 }
 
 #SliderInSliderNav{
-  display: none;
+    display: none;
 }
 
-.get-ready{
-  position: absolute;
-  z-index: 999;
+#countdown {
+    font-family: Lato, sans-serif;
+    color: #1b92ff;
+    font-size: 5vw;
+    font-weight: 400;
+
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    text-align: center;
+    margin-top: 16vh;
 }
