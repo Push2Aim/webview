@@ -1,7 +1,5 @@
 import React, {Component} from "react";
-import config from "./config";
 
-const $ = window.$;
 class AMRAP extends Component {
     render() {
         return (
@@ -78,9 +76,8 @@ class AMRAP extends Component {
                         </div>
                     </div>
                     <div className="amrap-workout">
-                        <img className="amrap" sizes="50vw"
-                             src={this.props.data.images.workout}
-                        />
+                        <img className="amrap" role="presentation" sizes="50vw"
+                             src={this.props.data.images.workout}/>
                     </div>
                 </div>
             </div>
@@ -88,7 +85,7 @@ class AMRAP extends Component {
     }
 
     nextSlide() {
-        $("#nextSlide").trigger("tap");
+        window.$("#nextSlide").trigger("tap");
     }
 }
 

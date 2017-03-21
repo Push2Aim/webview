@@ -22,7 +22,7 @@ class Warmup extends Component {
                             className="help-warmup w-button" data-ix="show-and-hide-warmup" href="#">Help</a></div>
                     </div>
                     <div className="pic-boss">
-                        <img className="shoulder-stretch" sizes="(max-width: 2156px) 55vw, 1186px"
+                        <img className="shoulder-stretch" role="presentation" sizes="(max-width: 2156px) 55vw, 1186px"
                              src={this.props.data.images.pic}
                     />
                     </div>

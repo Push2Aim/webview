@@ -74,9 +74,8 @@ class AMRAP extends Component {
                         </div>
                     </div>
                     <div className="amrap-workout">
-                        <img className="amrap" sizes="50vw"
-                             src={this.props.data.images.workout}
-                        />
+                        <img className="amrap" role="presentation" sizes="50vw"
+                             src={this.props.data.images.workout}/>
                     </div>
                 </div>
             </div>
