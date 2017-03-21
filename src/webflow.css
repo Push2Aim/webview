@@ -1,4 +1,4 @@
-/* Generated on: Sat Mar 18 2017 15:34:55 GMT+0000 (UTC) */
+/* Generated on: Tue Mar 21 2017 20:47:25 GMT+0000 (UTC) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -1078,7 +1078,10 @@ body {
 .sidebar-amrap-explanation {
   position: fixed;
   z-index: 6000;
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: 44%;
   height: 100%;
   max-height: 100%;
@@ -1678,7 +1681,7 @@ body {
   top: 0px;
   right: 0px;
   bottom: 0px;
-  z-index: 50000;
+  z-index: 100001;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1861,7 +1864,7 @@ body {
 }
 
 .stretching-title.what-you-need-title {
-  margin-top: -30vh;
+  margin-top: -40vh;
   margin-bottom: 0vh;
   margin-left: -12vw;
   color: #fff;
@@ -2045,7 +2048,10 @@ body {
 .sidebar-amrap-workout {
   position: fixed;
   z-index: 6000;
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: 44%;
   height: 100%;
   max-height: 100%;
@@ -2136,7 +2142,7 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 200vw;
+  width: 250vw;
   height: 27vh;
   margin-top: 5vh;
   padding: 3vh;
@@ -2290,6 +2296,38 @@ body {
   display: none;
 }
 
+.left-arrow-3 {
+  display: none;
+}
+
+.turquoise-bg {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image: -webkit-linear-gradient(270deg, #5fffd9, #5fffd9);
+  background-image: linear-gradient(180deg, #5fffd9, #5fffd9);
+}
+
+.get-ready {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  z-index: 999;
+  width: 30vw;
+  height: 13vw;
+  max-width: 50vh;
+  margin-top: 16vh;
+  font-family: Lato, sans-serif;
+  color: #1b92ff;
+  font-size: 5vw;
+  line-height: 6vw;
+  font-weight: 400;
+  text-align: center;
+}
+
 html.w-mod-js *[data-ix="display-none-on-load-stretching"] {
   display: none;
 }
@@ -2402,10 +2440,10 @@ html.w-mod-js *[data-ix="bodypart-to-move-text-appear-2"] {
 }
 
 html.w-mod-js *[data-ix="slowly-move-and-scale"] {
-  opacity: 0.9;
-  -webkit-transform: translate(0px, 0px) scale(1, 1);
-  -ms-transform: translate(0px, 0px) scale(1, 1);
-  transform: translate(0px, 0px) scale(1, 1);
+  opacity: 0;
+  -webkit-transform: translate(0px, 1vh) scale(0.95, 0.95);
+  -ms-transform: translate(0px, 1vh) scale(0.95, 0.95);
+  transform: translate(0px, 1vh) scale(0.95, 0.95);
 }
 
 html.w-mod-js *[data-ix="darken-appear"] {
@@ -2430,6 +2468,17 @@ html.w-mod-js *[data-ix="new-interaction"] {
   -webkit-transform: translate(90vw, 0px);
   -ms-transform: translate(90vw, 0px);
   transform: translate(90vw, 0px);
+}
+
+html.w-mod-js *[data-ix="slowly-blend-in"] {
+  opacity: 0;
+}
+
+html.w-mod-js *[data-ix="get-ready-appear-disappear"] {
+  opacity: 0;
+  -webkit-transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5);
 }
 
 @media (max-width: 479px) {

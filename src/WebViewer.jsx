@@ -6,7 +6,7 @@ import Stretching from "./Stretching";
 import AMRAPtut from "./AMRAPtut";
 import AMRAP from "./AMRAP";
 import Trophy from "./Trophy";
-// import "./webflow.css";
+import "./webflow.css";
 
 class WebViewer extends Component {
 
