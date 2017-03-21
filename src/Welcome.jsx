@@ -30,13 +30,13 @@ class Welcome extends Component {
                             <div className="fg"></div>
                             <div className="content-parent welcome-stretching-tuts">
                                 <img className="neck-stretch" role="presentation" sizes="100vw"
-                                     src="/images/NeckWeb.png"
+                                     src={this.props.data.images.neck}
                                 />
                                 <img className="magni-body-part-to-burn" role="presentation" data-ix="magnifier-disappear" sizes="100vw"
-                                src="/images/BurnMagnifier.png"
+                                src={this.props.data.images.burnMagni}
                                 />
                                 <img className="magni-body-part-to-move" role="presentation" data-ix="magnifier-appear" sizes="100vw"
-                                src="/images/MoveMagnifier.png"
+                                src={this.props.data.images.moveMagni}
                                 />
                             </div>
                             <div className="tut-texts-father tut-texts-father-in-stretching"><h1
@@ -78,7 +78,7 @@ class Welcome extends Component {
                                 </div>
                                 <div className="pic-boss pic-boss-in-tutorial">
                                     <img className="shoulder-stretch" role="presentation" sizes="(max-width: 2156px) 55vw, 1186px"
-                                         src="/images/ShouldersWeb.png"
+                                         src={this.props.data.images.shoulder}
                                     />
                                 </div>
                             </div>

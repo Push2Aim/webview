@@ -11,6 +11,12 @@ const config = [
                     "title": "Welcome to your home workout!",
                     "text": "You're going to warm up doing cardio, then do a stretching routine twice, and lastly finish it off with a challenging workout.",
                 },
+                "images": {
+                    "neck": "/images/NeckWeb.png",
+                    "burnMagni": "/images/BurnMagnifier.png",
+                    "moveMagni": "/images/MoveMagnifier.png",
+                    "shoulder": "/images/ShouldersWeb.png",
+                },
                 "need":[
                     {
                         "text": "chair",
