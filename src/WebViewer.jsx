@@ -30,7 +30,7 @@ class WebViewer extends Component {
                 sliderIndex = i;
                 break;
             }
-        if (document.title != config[this.state.cIndex].data[sliderIndex].title)
+        if (document.title !== config[this.state.cIndex].data[sliderIndex].title)
             document.title = config[this.state.cIndex].data[sliderIndex].title;
     }
 
