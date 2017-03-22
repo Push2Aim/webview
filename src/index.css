@@ -17,6 +17,7 @@ body {
     display: none;
 }
 
+.get-ready,
 #countdown {
     font-family: Lato, sans-serif;
     color: #1b92ff;
@@ -31,5 +32,5 @@ body {
 }
 
 .get-ready{
-    text-align: center;
+    margin-top: 17vh;
 }
