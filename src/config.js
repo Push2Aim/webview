@@ -211,7 +211,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": path + "/images/CalfWeb.png",
+                    "pic": path + "/images/CalvesWeb.png",
                 },
             },
             {
@@ -223,7 +223,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": path + "/images/CalfWeb.png",
+                    "pic": path + "/images/CalvesWeb.png",
                 },
             },
             {
