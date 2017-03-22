@@ -6,7 +6,10 @@ import config from "./config";
 function FormattedTimer(props) {
     let date = new Date(0);
     date.setSeconds(props.timer);
-    return <h1 id="countdown">{date.toLocaleTimeString().substr(3)}</h1>;
+    if (props.started && date.getHours()===1)
+        return <h1 id="countdown">{date.getMinutes() + ":" + date.getSeconds()}</h1>;
+    else
+        return <div></div>;
 }
 
 class Clock extends Component {
@@ -28,15 +31,15 @@ class Clock extends Component {
             <div className="wrapper Clock"
                  onClick={this.setAnimations.bind(this)}
                  style={{animation: this.state.animations[0]}}>
-                <div className="pie spinner"
-                     style={{animation: this.state.animations[1]}}></div>
-                <div className="pie filler"
-                     style={{animation: this.state.animations[2]}}></div>
-                <div className="mask"
-                     style={{animation: this.state.animations[3]}}></div>
+                {/*<div className="pie spinner"*/}
+                     {/*style={{animation: this.state.animations[1]}}></div>*/}
+                {/*<div className="pie filler"*/}
+                     {/*style={{animation: this.state.animations[2]}}></div>*/}
+                {/*<div className="mask"*/}
+                     {/*style={{animation: this.state.animations[3]}}></div>*/}
                 <div className="get-ready" data-ix="get-ready-appear-disappear">get ready</div>
 
-                <FormattedTimer timer={this.state.countdown} />
+                <FormattedTimer started={this.state.started} timer={this.state.countdown}/>
             </div>
         );
     }
