@@ -2,9 +2,18 @@ import React, {Component} from "react";
 import "./Clock.css";
 import config from "./config";
 
+
+function FormattedTimer(props) {
+    let date = new Date(0);
+    date.setSeconds(props.timer);
+    return <h1 id="countdown">{date.toLocaleTimeString().substr(3)}</h1>;
+}
+
 class Clock extends Component {
     constructor(props, context) {
         super(props, context);
+        let date = new Date();
+        date.setSeconds(date.getSeconds() + props.duration);
         this.state = {
             animations: ["", "", "", ""],
             started: false,
@@ -26,7 +35,8 @@ class Clock extends Component {
                 <div className="mask"
                      style={{animation: this.state.animations[3]}}></div>
                 <div className="get-ready" data-ix="get-ready-appear-disappear">get ready</div>
-                <h1 id="countdown">{this.state.countdown}</h1>
+
+                <FormattedTimer timer={this.state.countdown} />
             </div>
         );
     }
@@ -54,7 +64,7 @@ class Clock extends Component {
     tick() {
         if (this.finishedWaiting()) {
             this.setState((prevState, props) => ({
-                countdown: prevState.countdown - 1
+                countdown: prevState.countdown - 1,
             }));
 
             if (this.state.countdown < 0) {
