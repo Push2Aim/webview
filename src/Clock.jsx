@@ -9,7 +9,7 @@ function FormattedTimer(props) {
     if (props.started && date.getHours()===1)
         return <h1 id="countdown">{date.getMinutes() + ":" + date.getSeconds()}</h1>;
     else
-        return <div></div>;
+        return <div className="get-ready" data-ix="get-ready-appear-disappear">get ready</div>;
 }
 
 class Clock extends Component {
@@ -37,8 +37,6 @@ class Clock extends Component {
                      {/*style={{animation: this.state.animations[2]}}></div>*/}
                 {/*<div className="mask"*/}
                      {/*style={{animation: this.state.animations[3]}}></div>*/}
-                <div className="get-ready" data-ix="get-ready-appear-disappear">get ready</div>
-
                 <FormattedTimer started={this.state.started} timer={this.state.countdown}/>
             </div>
         );
