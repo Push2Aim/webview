@@ -175,7 +175,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": path + "/images/ChestWeb.png",
+                    "pic": path + "/images/ChestsWeb.png",
                 },
             },
             {
@@ -187,7 +187,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": path + "/images/QuadWeb.png",
+                    "pic": path + "/images/QuadsWeb.png",
                 },
             },
             {
@@ -199,7 +199,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": path + "/images/QuadWeb.png",
+                    "pic": path + "/images/QuadsWeb.png",
                 },
             },
             {
@@ -487,7 +487,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": path + "/images/ChestWeb.png",
+                    "pic": path + "/images/ChestsWeb.png",
                 },
             },
             {
@@ -499,7 +499,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": path + "/images/QuadWeb.png",
+                    "pic": path + "/images/QuadsWeb.png",
                 },
             },
             {
@@ -511,7 +511,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": path + "/images/QuadWeb.png",
+                    "pic": path + "/images/QuadsWeb.png",
                 },
             },
             {
