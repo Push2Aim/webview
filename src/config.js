@@ -1,3 +1,5 @@
+let path = "/webview";
+
 const config = [
     {
         "location": "home",
@@ -12,35 +14,35 @@ const config = [
                     "text": "You're going to warm up doing cardio, then do some stretch figures twice, and lastly finish it off with a challenging workout.",
                 },
                 "images": {
-                    "neck": "/images/NeckWeb.png",
-                    "burnMagni": "/images/BurnMagnifier.png",
-                    "moveMagni": "/images/MoveMagnifier.png",
-                    "shoulder": "/images/ShouldersWeb.png",
+                    "neck": path + "/images/NeckWeb.png",
+                    "burnMagni": path + "/images/BurnMagnifier.png",
+                    "moveMagni": path + "/images/MoveMagnifier.png",
+                    "shoulder": path + "/images/ShouldersWeb.png",
                 },
                 "need":[
                     {
                         "text": "chair",
-                        "src": "/images/chair.png"
+                        "src": path + "/images/chair.png"
                     },
                     {
                         "text": "yoga mat",
-                        "src": "/images/YogaMat.png"
+                        "src": path + "/images/YogaMat.png"
                     },
                     {
                         "text": "chair",
-                        "src": "/images/chair.png"
+                        "src": path + "/images/chair.png"
                     },
                     {
                         "text": "yoga mat",
-                        "src": "/images/YogaMat.png"
+                        "src": path + "/images/YogaMat.png"
                     },
                     {
                         "text": "chair",
-                        "src": "/images/chair.png"
+                        "src": path + "/images/chair.png"
                     },
                     {
                         "text": "yoga mat",
-                        "src": "/images/YogaMat.png"
+                        "src": path + "/images/YogaMat.png"
                     },
                 ]
             },
@@ -53,7 +55,7 @@ const config = [
                 },
                 "timer": 120,
                 "images": {
-                    "pic": "/images/JumpingJackWarmup",
+                    "pic": path + "/images/JumpingJackWarmup.png",
                 },
             },
             {
@@ -77,7 +79,7 @@ const config = [
                 },
                 "timer": 120,
                 "images": {
-                    "pic": "/images/JumpingJackWarmup",
+                    "pic": path + "/images/JumpingJackWarmup.png",
                 },
             },
             {
@@ -101,7 +103,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": "/images/NeckWeb",
+                    "pic": path + "/images/NeckWeb.png",
                 },
             },
             {
@@ -113,7 +115,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": "/images/NeckWeb",
+                    "pic": path + "/images/NeckWeb.png",
                 },
             },
             {
@@ -125,7 +127,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": "/images/ShouldersWeb",
+                    "pic": path + "/images/ShouldersWeb.png",
                 },
             },
             {
@@ -137,7 +139,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": "/images/ShouldersWeb",
+                    "pic": path + "/images/ShouldersWeb.png",
                 },
             },
             {
@@ -149,7 +151,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": "/images/ShouldersWeb",
+                    "pic": path + "/images/ShouldersWeb.png",
                 },
             },
             {
@@ -161,7 +163,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": "/images/ShouldersWeb",
+                    "pic": path + "/images/ShouldersWeb.png",
                 },
             },
             {
@@ -173,7 +175,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": "/images/ChestWeb",
+                    "pic": path + "/images/ChestWeb.png",
                 },
             },
             {
@@ -185,7 +187,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": "/images/QuadWeb",
+                    "pic": path + "/images/QuadWeb.png",
                 },
             },
             {
@@ -197,7 +199,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": "/images/QuadWeb",
+                    "pic": path + "/images/QuadWeb.png",
                 },
             },
             {
@@ -209,7 +211,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": "/images/CalfWeb",
+                    "pic": path + "/images/CalfWeb.png",
                 },
             },
             {
@@ -221,7 +223,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": "/images/CalfWeb",
+                    "pic": path + "/images/CalfWeb.png",
                 },
             },
             {
@@ -233,7 +235,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": "/images/HamstringWeb",
+                    "pic": path + "/images/HamstringWeb.png",
                 },
             },
             {
@@ -302,7 +304,7 @@ const config = [
                 "type": "Trophy",
                 "title": "Congratulations",
                 "images": {
-                    "trophy_pic": "/images/Trophy.png",
+                    "trophy_pic": path + "/images/Trophy.png",
                 },
                 "texts": {
                     "title": "1 Step Closer To Your Goal!",
@@ -324,35 +326,35 @@ const config = [
                     "text": "You're going to warm up doing cardio, then do some stretch figures twice, and lastly finish it off with a challenging workout.",
                 },
                 "images": {
-                    "neck": "/images/NeckWeb.png",
-                    "burnMagni": "/images/BurnMagnifier.png",
-                    "moveMagni": "/images/MoveMagnifier.png",
-                    "shoulder": "/images/ShouldersWeb.png",
+                    "neck": path + "/images/NeckWeb.png",
+                    "burnMagni": path + "/images/BurnMagnifier.png",
+                    "moveMagni": path + "/images/MoveMagnifier.png",
+                    "shoulder": path + "/images/ShouldersWeb.png",
                 },
                 "need":[
                     {
                         "text": "chair",
-                        "src": "/images/chair.png"
+                        "src": path + "/images/chair.png"
                     },
                     {
                         "text": "yoga mat",
-                        "src": "/images/YogaMat.png"
+                        "src": path + "/images/YogaMat.png"
                     },
                     {
                         "text": "chair",
-                        "src": "/images/chair.png"
+                        "src": path + "/images/chair.png"
                     },
                     {
                         "text": "yoga mat",
-                        "src": "/images/YogaMat.png"
+                        "src": path + "/images/YogaMat.png"
                     },
                     {
                         "text": "chair",
-                        "src": "/images/chair.png"
+                        "src": path + "/images/chair.png"
                     },
                     {
                         "text": "yoga mat",
-                        "src": "/images/YogaMat.png"
+                        "src": path + "/images/YogaMat.png"
                     },
                 ]
             },
@@ -365,7 +367,7 @@ const config = [
                 },
                 "timer": 120,
                 "images": {
-                    "pic": "/images/RunWarmup",
+                    "pic": path + "/images/RunWarmup.png",
                 },
             },
             {
@@ -389,7 +391,7 @@ const config = [
                 },
                 "timer": 120,
                 "images": {
-                    "pic": "/images/JumpingJackWarmup",
+                    "pic": path + "/images/JumpingJackWarmup.png",
                 },
             },
             {
@@ -413,7 +415,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": "/images/NeckWeb",
+                    "pic": path + "/images/NeckWeb.png",
                 },
             },
             {
@@ -425,7 +427,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": "/images/NeckWeb",
+                    "pic": path + "/images/NeckWeb.png",
                 },
             },
             {
@@ -437,7 +439,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": "/images/ShouldersWeb",
+                    "pic": path + "/images/ShouldersWeb.png",
                 },
             },
             {
@@ -449,7 +451,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": "/images/ShouldersWeb",
+                    "pic": path + "/images/ShouldersWeb.png",
                 },
             },
             {
@@ -461,7 +463,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": "/images/ShouldersWeb",
+                    "pic": path + "/images/ShouldersWeb.png",
                 },
             },
             {
@@ -473,7 +475,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": "/images/ShouldersWeb",
+                    "pic": path + "/images/ShouldersWeb.png",
                 },
             },
             {
@@ -485,7 +487,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": "/images/ChestWeb",
+                    "pic": path + "/images/ChestWeb.png",
                 },
             },
             {
@@ -497,7 +499,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": "/images/QuadWeb",
+                    "pic": path + "/images/QuadWeb.png",
                 },
             },
             {
@@ -509,7 +511,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": "/images/QuadWeb",
+                    "pic": path + "/images/QuadWeb.png",
                 },
             },
             {
@@ -521,7 +523,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": "/images/CalfWeb",
+                    "pic": path + "/images/CalfWeb.png",
                 },
             },
             {
@@ -533,7 +535,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": "/images/CalfWeb",
+                    "pic": path + "/images/CalfWeb.png",
                 },
             },
             {
@@ -545,7 +547,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": "/images/HamstringWeb",
+                    "pic": path + "/images/HamstringWeb.png",
                 },
             },
             {
@@ -614,7 +616,7 @@ const config = [
                 "type": "Trophy",
                 "title": "Congratulations",
                 "images": {
-                    "trophy_pic": "/images/Trophy.png",
+                    "trophy_pic": path + "/images/Trophy.png",
                 },
                 "texts": {
                     "title": "1 Step Closer To Your Goal!",
