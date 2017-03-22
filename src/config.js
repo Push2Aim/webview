@@ -499,7 +499,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": path + "/images/QuadWeb.png",
+                    "pic": path + "/images/QuadsWeb.png",
                 },
             },
             {
@@ -511,7 +511,7 @@ const config = [
                 },
                 "timer": 15,
                 "images": {
-                    "pic": path + "/images/QuadWeb.png",
+                    "pic": path + "/images/QuadsWeb.png",
                 },
             },
             {
