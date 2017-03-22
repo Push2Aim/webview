@@ -33,6 +33,11 @@ class WebViewer extends Component {
         document.title = config[this.state.cIndex].data[sliderIndex].title;
     }
 
+    componentDidMount() {
+        this.timerID = setInterval(
+            () => this.updateSliderIndex(), 500);
+    }
+
     render() {
         this.updateSliderIndex();
         return (
