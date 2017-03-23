@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 
-class AMRAP extends Component {
+class AMRAPtut extends Component {
     render() {
         return (
             <div className="w-slide">
@@ -89,4 +89,4 @@ class AMRAP extends Component {
     }
 }
 
-export default AMRAP;
+export default AMRAPtut;
