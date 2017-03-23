@@ -322,7 +322,7 @@ const config = [
                 "title": "Welcome",
                 "timer": 7,
                 "texts": {
-                    "title": "Welcome to your home workout!",
+                    "title": "Welcome to your outdoor workout!",
                     "text": "You're going to warm up doing cardio, then do some stretch figures twice, and lastly finish it off with a challenging workout.",
                 },
                 "images": {
@@ -333,28 +333,28 @@ const config = [
                 },
                 "need":[
                     {
-                        "text": "chair",
-                        "src": path + "/images/chair.png"
+                        "text": "bench",
+                        "src": path + "/images/benchs.png"
                     },
                     {
-                        "text": "yoga mat",
-                        "src": path + "/images/YogaMat.png"
+                        "text": "space to run",
+                        "src": path + "/images/empty.png"
                     },
                     {
-                        "text": "chair",
-                        "src": path + "/images/chair.png"
+                        "text": "bench",
+                        "src": path + "/images/benchs.png"
                     },
                     {
-                        "text": "yoga mat",
-                        "src": path + "/images/YogaMat.png"
+                        "text": "space to run",
+                        "src": path + "/images/empty.png"
                     },
                     {
-                        "text": "chair",
-                        "src": path + "/images/chair.png"
+                        "text": "bench",
+                        "src": path + "/images/benchs.png"
                     },
                     {
-                        "text": "yoga mat",
-                        "src": path + "/images/YogaMat.png"
+                        "text": "space to run",
+                        "src": path + "/images/empty.png"
                     },
                 ]
             },
