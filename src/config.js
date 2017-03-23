@@ -1,5 +1,4 @@
 let path = "/webview";
-
 const config = [
     {
         "location": "home",
