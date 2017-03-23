@@ -29,29 +29,26 @@ class AMRAP extends Component {
                                     data-ix="display-none-on-load-vid-tuts"
                                     >
                                         {/*style="padding-top: 56.17021276595745%;"*/}
-                                        {/*<iframe className="embedly-embed"*/}
-                                        {/*src={this.props.data.videos[0].src}*/}
-                                        {/*scrolling="no" frameborder="0" allowfullscreen></iframe>*/}
-
-                                        <iframe src="https://www.youtube.com/embed/wjUmnZH528Y" />
-
+                                        <iframe className="embedly-embed"
+                                        src={this.props.data.videos[0].src}
+                                        scrolling="no" frameborder="0" allowfullscreen></iframe>
                                     </div>
-                                    {/*<div className="push-ups-tut w-embed w-video"*/}
-                                    {/*data-ix="display-none-on-load-vid-tuts"*/}
-                                    {/*>*/}
-                                    {/*/!*style="padding-top: 56.17021276595745%;"*!/*/}
-                                        {/*<iframe className="embedly-embed"*/}
-                                                {/*src={this.props.data.videos[1].src}*/}
-                                                {/*scrolling="no" frameborder="0" allowfullscreen></iframe>*/}
-                                    {/*</div>*/}
-                                    {/*<div className="sit-ups-tut w-embed w-video"*/}
-                                    {/*data-ix="display-none-on-load-vid-tuts"*/}
-                                    {/*>*/}
-                                    {/*/!*style="padding-top: 56.17021276595745%;"*!/*/}
-                                        {/*<iframe className="embedly-embed"*/}
-                                                {/*src={this.props.data.videos[2].src}*/}
-                                                {/*scrolling="no" frameborder="0" allowfullscreen></iframe>*/}
-                                    {/*</div>*/}
+                                    <div className="push-ups-tut w-embed w-video"
+                                    data-ix="display-none-on-load-vid-tuts"
+                                    >
+                                    {/*style="padding-top: 56.17021276595745%;"*/}
+                                        <iframe className="embedly-embed"
+                                                src={this.props.data.videos[1].src}
+                                                scrolling="no" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                    <div className="sit-ups-tut w-embed w-video"
+                                    data-ix="display-none-on-load-vid-tuts"
+                                    >
+                                    {/*style="padding-top: 56.17021276595745%;"*/}
+                                        <iframe className="embedly-embed"
+                                                src={this.props.data.videos[2].src}
+                                                scrolling="no" frameborder="0" allowfullscreen></iframe>
+                                    </div>
                                     <a className="tut-squats w-button" data-ix="vid-tut-squats-appear" href="#">
                                         {this.props.data.videos[0].title}</a><a
                                     className="tut-push-ups w-button" data-ix="vid-tut-push-ups-appear"
