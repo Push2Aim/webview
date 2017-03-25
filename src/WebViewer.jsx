@@ -71,19 +71,19 @@ class WebViewer extends Component {
     mapWorkout(data, sIndex, cIndex) {
         switch (data.type) {
             case "Welcome":
-                return  <Welcome data={data} sIndex={sIndex}/>;
+                return <Welcome data={data} sIndex={sIndex}/>;
             case "Warmup":
                 return <Warmup data={data} cIndex={cIndex} sIndex={sIndex}/>;
             case "Stretching":
-                return  <Stretching data={data} cIndex={cIndex} sIndex={sIndex}/>;
+                return <Stretching data={data} cIndex={cIndex} sIndex={sIndex}/>;
             case "Break":
-                return  <Break data={data} cIndex={cIndex} sIndex={sIndex}/>;
+                return <Break data={data} cIndex={cIndex} sIndex={sIndex}/>;
             case "AMRAPtut":
                 return <AMRAPtut data={data} cIndex={cIndex}/>;
             case "AMRAP":
-                return  <AMRAP data={data} cIndex={cIndex} sIndex={sIndex}/>;
+                return <AMRAP data={data} cIndex={cIndex} sIndex={sIndex}/>;
             case "Trophy":
-                return  <Trophy data={data}/>;
+                return <Trophy data={data}/>;
             default:
                 return <p>unknown Type: {data.type}</p>;
         }

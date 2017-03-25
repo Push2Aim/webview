@@ -4,7 +4,7 @@ class Trophy extends Component {
     render() {
         return (
             <div className="w-slide">
-                <div className="content-parent">
+                <div className="content-parent" style={{backgroundImage: this.props.data.background}}>
                     <img className="trophy" role="presentation" data-ix="trophy-appear"
                          sizes="(max-width: 991px) 100vw, 857.421875px"
                          src={this.props.data.images.trophy_pic}/>

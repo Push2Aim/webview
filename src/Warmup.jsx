@@ -5,7 +5,7 @@ class Warmup extends Component {
     render() {
         return (
             <div className="w-slide">
-                <div className="content-parent">
+                <div className="content-parent" style={{backgroundImage: this.props.data.background}}>
                     <div className="sidebar-warmup" data-ix="display-none-on-load-warmup">
                         <div className="close-button-boss">
                             <div className="duplicates tut-spread warmup-text">

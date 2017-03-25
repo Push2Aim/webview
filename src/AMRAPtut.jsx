@@ -4,7 +4,7 @@ class AMRAPtut extends Component {
     render() {
         return (
             <div className="w-slide">
-                <div className="content-parent">
+                <div className="content-parent" style={{backgroundImage: this.props.data.background}}>
                     <div className="sidebar-amrap-explanation" data-ix="display-none-on-load-amrap-explanation">
                         <div className="close-button-boss">
                             <a className="close-button-amrap w-button"

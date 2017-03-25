@@ -5,7 +5,7 @@ class Stretching extends Component {
     render() {
         return (
             <div className="w-slide">
-                <div className="content-parent">
+                <div className="content-parent" style={{backgroundImage: this.props.data.background}}>
                     <div className="for-stretching sidebar-stretching" data-ix="display-none-on-load-stretching">
                         <div className="close-button-boss">
                             <div className="duplicates stretching-text tut-spread"><h1 className="heading">{this.props.data.texts.heading}</h1>

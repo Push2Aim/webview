@@ -6,7 +6,7 @@ class Break extends Component {
     render() {
         return (
             <div className="w-slide">
-                <div className="content-parent">
+                <div className="content-parent" style={{backgroundImage: this.props.data.background}}>
                     <div className="timer-button-boss">
                         <div className="timer-button-supervisor">
                             <a className="breathetime timer w-inline-block" href="#">
