@@ -16,7 +16,7 @@ class AMRAPtut extends Component {
                             <div className="video-tut-supervisor">
                                 <div className="squats-tut-supervisor" data-ix="hide"></div>
                             </div>
-                            <div className="tut-button-boss"><a className="error tut-button w-button"
+                            <div className="tut-button-boss"><a className="tut-button w-button"
                                                                 data-ix="dropdown-show"
                                                                 href="#">{this.props.data.texts.tutButton}</a>
                             </div>
