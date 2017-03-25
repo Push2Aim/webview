@@ -9,7 +9,7 @@ class AMRAP extends Component {
                     <div className="sidebar-amrap-workout" data-ix="display-none-on-load-amrap-workout">
                         <div className="close-button-boss">
                             <a className="close-button-amrap w-button"
-                               data-ix="hide-button-amrap" href="#">X</a>
+                               data-ix="hide-button-amrap-2" href="#">X</a>
                             <div className="duplicates tut-spread">
                                 <h1 className="heading">{this.props.data.texts.heading}</h1>
                                 <p className="explanation">{this.props.data.texts.explanation}</p>

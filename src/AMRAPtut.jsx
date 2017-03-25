@@ -7,7 +7,7 @@ class AMRAPtut extends Component {
                 <div className="content-parent" style={{backgroundImage: this.props.data.background}}>
                     <div className="sidebar-amrap-explanation" data-ix="display-none-on-load-amrap-explanation">
                         <div className="close-button-boss">
-                            <a className="close-button-amrap w-button"
+                            <a className="close-button-amrap-tut w-button"
                             data-ix="hide-button-amrap" href="#">X</a>
                             <div className="duplicates tut-spread">
                                 <h1 className="heading">{this.props.data.texts.heading}</h1>
