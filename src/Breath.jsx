@@ -5,7 +5,7 @@ import "./Breath.css";
 class Breath extends Component {
     render() {
         return (
-            <div class="breath">
+            <div className="breathing">
                 <p></p>
                 <p></p>
                 <p></p>
