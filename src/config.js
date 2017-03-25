@@ -246,6 +246,7 @@ const config = [
             {
                 "type": "AMRAPtut",
                 "title": "20min AMRAP",
+                "background": "linear-gradient(90deg, rgba(249, 255, 116, .66), rgba(162, 243, 124, .66) 40%, rgba(68, 255, 68, .66)), linear-gradient(180deg, #fff, #fff)",
                 "texts": {
                     "heading": "20min AMRAP",
                     "explanation": "Those 5 exercises form 1 round. Do As Many Rounds As Possible within 20min.",
@@ -275,8 +276,9 @@ const config = [
                 }
             },
             {
-                "type": "AMRAP",
+                "type": "AMRAPtut",
                 "title": "20min AMRAP",
+                "background": "linear-gradient(90deg, rgba(249, 255, 116, .66), rgba(162, 243, 124, .66) 40%, rgba(68, 255, 68, .66)), linear-gradient(180deg, #fff, #fff)",
                 "texts": {
                     "heading": "20min AMRAP",
                     "explanation": "Those 5 exercises form 1 round. Do As Many Rounds As Possible within 20 min.",
@@ -308,6 +310,7 @@ const config = [
             {
                 "type": "Trophy",
                 "title": "Congratulations",
+                "background": "linear-gradient(0deg, red, #9d92ec 35%, #00b1c9)",
                 "images": {
                     "trophy_pic": path + "/images/Trophy.png",
                 },
@@ -563,6 +566,7 @@ const config = [
             {
                 "type": "AMRAPtut",
                 "title": "20min AMRAP",
+                "background": "linear-gradient(90deg, rgba(249, 255, 116, .66), rgba(162, 243, 124, .66) 40%, rgba(68, 255, 68, .66)), linear-gradient(180deg, #fff, #fff)",
                 "texts": {
                     "heading": "20min AMRAP",
                     "explanation": "Those 5 exercises form 1 round. Do As Many Rounds As Possible within 20min.",
@@ -594,6 +598,7 @@ const config = [
             {
                 "type": "AMRAP",
                 "title": "20min AMRAP",
+                "background": "linear-gradient(90deg, rgba(249, 255, 116, .66), rgba(162, 243, 124, .66) 40%, rgba(68, 255, 68, .66)), linear-gradient(180deg, #fff, #fff)",
                 "texts": {
                     "heading": "20min AMRAP",
                     "explanation": "Those 5 exercises form 1 round. Do As Many Rounds As Possible within 20 min.",
@@ -605,7 +610,7 @@ const config = [
                         "title": "Dips",
                         "src": "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FwjUmnZH528Y%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DwjUmnZH528Y&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FwjUmnZH528Y%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"
                     }, {
-                        "title": "Squats",
+                         "title": "Squats",
                         "src": "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FDy28eq2PjcM%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DDy28eq2PjcM&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FDy28eq2PjcM%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"
                     }, {
                         "title": "Push-Ups",
@@ -625,6 +630,7 @@ const config = [
             {
                 "type": "Trophy",
                 "title": "Congratulations",
+                "background": "linear-gradient(0deg, red, #9d92ec 35%, #00b1c9)",
                 "images": {
                     "trophy_pic": path + "/images/Trophy.png",
                 },
