@@ -1,4 +1,4 @@
-/* Generated on: Fri Mar 24 2017 17:42:32 GMT+0000 (UTC) */
+/* Generated on: Sat Mar 25 2017 21:52:30 GMT+0000 (UTC) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -87,6 +87,16 @@ body {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
+}
+
+.content-parent.amrap-bg {
+  background-image: -webkit-linear-gradient(0deg, rgba(249, 255, 116, .66), rgba(162, 243, 124, .66) 40%, rgba(68, 255, 68, .66)), -webkit-linear-gradient(270deg, #fff, #fff);
+  background-image: linear-gradient(90deg, rgba(249, 255, 116, .66), rgba(162, 243, 124, .66) 40%, rgba(68, 255, 68, .66)), linear-gradient(180deg, #fff, #fff);
+}
+
+.content-parent.trophy-bg {
+  background-image: -webkit-linear-gradient(90deg, red, #9d92ec 35%, #00b1c9);
+  background-image: linear-gradient(0deg, red, #9d92ec 35%, #00b1c9);
 }
 
 .timer-button-boss {
@@ -499,7 +509,7 @@ body {
   display: block;
   max-height: 100%;
   max-width: 100%;
-  box-shadow: 0 0 6vh 2vh rgba(114, 155, 139, .5);
+  box-shadow: 0 0 6vh 2vh hsla(0, 0%, 100%, .5);
 }
 
 .how-to-amrap {
@@ -699,11 +709,12 @@ body {
   display: block;
   max-width: 95%;
   margin-top: 2vh;
-  margin-bottom: 2vh;
+  margin-bottom: 0vh;
   margin-left: 6vh;
   font-family: Lato, sans-serif;
   color: #5d5d5d;
   font-size: 10vh;
+  line-height: 11vh;
   font-weight: 700;
 }
 
@@ -926,7 +937,6 @@ body {
 }
 
 .tut-button {
-  position: static;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -987,6 +997,11 @@ body {
   background-image: -webkit-linear-gradient(270deg, #ff5c5c, #ff5c5c);
   background-image: linear-gradient(180deg, #ff5c5c, #ff5c5c);
   box-shadow: 0 0 3vh 0 rgba(255, 92, 92, .15);
+}
+
+.tut-button.error {
+  position: relative;
+  z-index: 1;
 }
 
 .sidebar-warmup {
@@ -1112,7 +1127,7 @@ body {
   box-shadow: 1px 0 1vw 0 rgba(75, 95, 87, .5);
 }
 
-.close-button-amrap {
+.close-button-amrap-tut {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1137,7 +1152,7 @@ body {
   font-size: 6vh;
 }
 
-.close-button-amrap:hover {
+.close-button-amrap-tut:hover {
   width: 12%;
   height: 32%;
   margin-left: 3%;
@@ -1148,7 +1163,7 @@ body {
   font-size: 4.8vh;
 }
 
-.close-button-amrap:active {
+.close-button-amrap-tut:active {
   width: 10%;
   height: 26.666%;
   margin-left: 5%;
@@ -1185,13 +1200,13 @@ body {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  z-index: 100;
+  z-index: 6003;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 12vh;
+  height: 14vh;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
@@ -1206,6 +1221,12 @@ body {
   display: none;
 }
 
+.tut-button-boss.background {
+  z-index: 6001;
+  background-image: -webkit-linear-gradient(270deg, #e9e9e9, #e9e9e9);
+  background-image: linear-gradient(180deg, #e9e9e9, #e9e9e9);
+}
+
 .exercise-tut-boss {
   position: absolute;
   left: 0px;
@@ -1217,7 +1238,7 @@ body {
   display: flex;
   width: 100%;
   height: 41%;
-  margin-bottom: 12vh;
+  margin-bottom: 14vh;
   padding-top: 1vw;
   padding-bottom: 1vw;
   -webkit-box-orient: vertical;
@@ -1281,10 +1302,7 @@ body {
 }
 
 .tut-squats {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   height: 32%;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -1307,10 +1325,7 @@ body {
 }
 
 .tut-push-ups {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   height: 32%;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -1333,10 +1348,7 @@ body {
 }
 
 .tut-sit-ups {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   height: 32%;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -1364,6 +1376,7 @@ body {
   right: 0px;
   bottom: 0px;
   z-index: -1;
+  display: block;
   width: 100%;
   height: 100%;
 }
@@ -1513,7 +1526,7 @@ body {
 
 .congrats-text {
   font-family: Lato, sans-serif;
-  color: #3a3a3a;
+  color: #5c5c5c;
   font-size: 7vh;
   line-height: 6vh;
   text-align: center;
@@ -1703,7 +1716,10 @@ body {
   right: 0px;
   bottom: 0px;
   z-index: 100001;
-  display: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: 12vw;
   height: 60vh;
   margin-top: 20vh;
@@ -1788,7 +1804,7 @@ body {
 .welcome-what-you-do {
   max-width: 90%;
   font-family: Lato, sans-serif;
-  color: #303030;
+  color: #5d5d5d;
   font-size: 6vh;
   line-height: 7.5vh;
   font-weight: 300;
@@ -2042,13 +2058,13 @@ body {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  z-index: 99;
+  z-index: 6002;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 12vh;
+  height: 14vh;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -2329,15 +2345,26 @@ body {
 }
 
 .get-ready {
-  position: absolute;
+  position: relative;
   left: 0px;
   top: 0px;
   bottom: 0px;
   z-index: 999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: 30vw;
-  height: 13vw;
   max-width: 50vh;
-  margin-top: 16vh;
+  padding-bottom: 2vh;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-family: Lato, sans-serif;
   color: #1b92ff;
   font-size: 5vw;
@@ -2478,6 +2505,57 @@ body {
   align-items: center;
 }
 
+.slide-nav-2 {
+  z-index: -10000;
+}
+
+.close-button-amrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 15%;
+  height: 40%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top-left-radius: 5vh;
+  border-bottom-left-radius: 5vh;
+  background-image: -webkit-linear-gradient(270deg, #1b92ff, #1b92ff);
+  background-image: linear-gradient(180deg, #1b92ff, #1b92ff);
+  box-shadow: 0 0 3vh 0 rgba(112, 194, 255, .15);
+  font-family: Lato, sans-serif;
+  color: #fff;
+  font-size: 6vh;
+}
+
+.close-button-amrap:hover {
+  width: 12%;
+  height: 32%;
+  margin-left: 3%;
+  background-image: -webkit-linear-gradient(270deg, #1684e9, #1684e9);
+  background-image: linear-gradient(180deg, #1684e9, #1684e9);
+  box-shadow: 0 0 3vh 0 rgba(112, 194, 255, .1);
+  color: #e7e7e7;
+  font-size: 4.8vh;
+}
+
+.close-button-amrap:active {
+  width: 10%;
+  height: 26.666%;
+  margin-left: 5%;
+  background-image: -webkit-linear-gradient(270deg, #1373ca, #1373ca);
+  background-image: linear-gradient(180deg, #1373ca, #1373ca);
+  box-shadow: 0 0 3vh 0 rgba(112, 194, 255, .07);
+  color: #a5a5a5;
+  font-size: 3.9999vh;
+}
+
 html.w-mod-js *[data-ix="display-none-on-load-stretching"] {
   display: none;
 }
@@ -2524,6 +2602,11 @@ html.w-mod-js *[data-ix="dropdown-display-none"] {
 }
 
 html.w-mod-js *[data-ix="dropdown-hide"] {
+  display: none;
+  opacity: 0;
+}
+
+html.w-mod-js *[data-ix="dropdown-hide-2"] {
   display: none;
   opacity: 0;
 }
