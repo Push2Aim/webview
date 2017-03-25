@@ -6,6 +6,7 @@ import Stretching from "./Stretching";
 import AMRAPtut from "./AMRAPtut";
 import AMRAP from "./AMRAP";
 import Trophy from "./Trophy";
+import Break from "./Break";
 import "./webflow.css";
 
 class WebViewer extends Component {
@@ -75,6 +76,8 @@ class WebViewer extends Component {
                 return <Warmup data={data} cIndex={cIndex} sIndex={sIndex}/>;
             case "Stretching":
                 return  <Stretching data={data} cIndex={cIndex} sIndex={sIndex}/>;
+            case "Break":
+                return  <Break data={data} cIndex={cIndex} sIndex={sIndex}/>;
             case "AMRAPtut":
                 return <AMRAPtut data={data} cIndex={cIndex}/>;
             case "AMRAP":
