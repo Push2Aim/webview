@@ -95,6 +95,11 @@ const config = [
                 },
             },
             {
+                "type": "Break",
+                "title": "Break",
+                "timer": 30,
+            },
+            {
                 "type": "Stretching",
                 "title": "Neck Stretching 1st",
                 "texts": {
@@ -405,6 +410,11 @@ const config = [
                 "images": {
                     "pic": "",
                 },
+            },
+            {
+                "type": "Break",
+                "title": "Break",
+                "timer": 30,
             },
             {
                 "type": "Stretching",
