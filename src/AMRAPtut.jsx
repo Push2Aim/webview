@@ -1,6 +1,36 @@
 import React, {Component} from "react";
 
 class AMRAPtut extends Component {
+
+    buildTuts(videos) {
+        return videos.map((video, i) => {
+                let videoClass = "w-embed w-video vid-tut-" + i;
+                return (
+                    <div className={videoClass}
+                         data-ix="display-none-on-load-vid-tuts">
+                        {/*style="padding-top: 56.17021276595745%;"*/}
+                        <iframe className="embedly-embed"
+                                src={video.src}
+                                scrolling="no" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                );
+            }
+        );
+    }
+
+
+    buildButtons(videos) {
+        return videos.map((video, i) => {
+                let videoClass = "tut-" + i + "-button w-button";
+                let videoAnimation = "vid-tut-" + i + "-appear";
+                return (
+                    <a className={videoClass}
+                       data-ix={videoAnimation} href="#">{video.title}</a>
+                );
+            }
+        );
+    }
+
     render() {
         return (
             <div className="w-slide">
@@ -25,38 +55,10 @@ class AMRAPtut extends Component {
                                                                  href="#">back</a></div>
                             <div className="dropdown-father">
                                 <div className="exercise-tut-boss" data-ix="dropdown-display-none">
-                                    <div className="squats-tut w-embed w-video"
-                                    data-ix="display-none-on-load-vid-tuts"
-                                    >
-                                        {/*style="padding-top: 56.17021276595745%;"*/}
-                                        <iframe className="embedly-embed"
-                                        src={this.props.data.videos[0].src}
-                                        scrolling="no" frameborder="0" allowfullscreen></iframe>
-                                    </div>
-                                    <div className="push-ups-tut w-embed w-video"
-                                    data-ix="display-none-on-load-vid-tuts"
-                                    >
-                                    {/*style="padding-top: 56.17021276595745%;"*/}
-                                        <iframe className="embedly-embed"
-                                                src={this.props.data.videos[1].src}
-                                                scrolling="no" frameborder="0" allowfullscreen></iframe>
-                                    </div>
-                                    <div className="sit-ups-tut w-embed w-video"
-                                    data-ix="display-none-on-load-vid-tuts"
-                                    >
-                                    {/*style="padding-top: 56.17021276595745%;"*/}
-                                        <iframe className="embedly-embed"
-                                                src={this.props.data.videos[2].src}
-                                                scrolling="no" frameborder="0" allowfullscreen></iframe>
-                                    </div>
-                                    <a className="tut-squats w-button" data-ix="vid-tut-squats-appear" href="#">
-                                        {this.props.data.videos[0].title}</a><a
-                                    className="tut-push-ups w-button" data-ix="vid-tut-push-ups-appear"
-                                    href="#">{this.props.data.videos[1].title}</a>
-                                    <a
-                                        className="tut-sit-ups w-button" data-ix="vid-tut-sit-ups-appear"
-                                        href="#">{this.props.data.videos[2].title}</a>
+                                    {this.buildTuts(this.props.data.videos)}
+                                    {this.buildButtons(this.props.data.videos)}
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -87,6 +89,6 @@ class AMRAPtut extends Component {
     nextSlide() {
         window.$("#nextSlide").trigger("tap");
     }
-}
 
+}
 export default AMRAPtut;
