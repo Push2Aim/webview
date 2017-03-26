@@ -1,4 +1,4 @@
-/* Generated on: Sat Mar 25 2017 21:52:30 GMT+0000 (UTC) */
+/* Generated on: Sun Mar 26 2017 20:25:37 GMT+0000 (UTC) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -1277,7 +1277,7 @@ body {
   align-items: center;
 }
 
-.squats-tut {
+.vid-tut-0 {
   position: absolute;
   z-index: 9;
   display: block;
@@ -1285,7 +1285,7 @@ body {
   margin-top: -1vw;
 }
 
-.push-ups-tut {
+.vid-tut-1 {
   position: absolute;
   z-index: 9;
   display: block;
@@ -1293,7 +1293,7 @@ body {
   margin-top: -1vw;
 }
 
-.sit-ups-tut {
+.vid-tut-2 {
   position: absolute;
   z-index: 9;
   display: block;
@@ -1301,7 +1301,7 @@ body {
   margin-top: -1vw;
 }
 
-.tut-squats {
+.tut-0-button {
   display: none;
   height: 32%;
   -webkit-box-pack: center;
@@ -1324,7 +1324,7 @@ body {
   font-weight: 300;
 }
 
-.tut-push-ups {
+.tut-1-button {
   display: none;
   height: 32%;
   -webkit-box-pack: center;
@@ -1347,7 +1347,7 @@ body {
   font-weight: 300;
 }
 
-.tut-sit-ups {
+.tut-2-button {
   display: none;
   height: 32%;
   -webkit-box-pack: center;
@@ -2556,6 +2556,50 @@ body {
   font-size: 3.9999vh;
 }
 
+.vid-tut-3 {
+  position: absolute;
+  z-index: 9;
+  height: 100%;
+  margin-top: -1vw;
+}
+
+.tut-3-button {
+  display: none;
+  height: 32%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  background-image: -webkit-linear-gradient(270deg, #c3c3c3, #c3c3c3);
+  background-image: linear-gradient(180deg, #c3c3c3, #c3c3c3);
+  font-family: Lato, sans-serif;
+  color: #fff;
+  font-size: 4.5vh;
+  line-height: 5vh;
+  font-weight: 300;
+}
+
+.vid-tut-4 {
+  position: absolute;
+  z-index: 9;
+  height: 100%;
+  margin-top: -1vw;
+}
+
+.tut-4-button {
+  display: none;
+  height: 32%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  background-image: -webkit-linear-gradient(270deg, #c3c3c3, #c3c3c3);
+  background-image: linear-gradient(180deg, #c3c3c3, #c3c3c3);
+  font-family: Lato, sans-serif;
+  color: #fff;
+  font-size: 4.5vh;
+  line-height: 5vh;
+  font-weight: 300;
+}
+
 html.w-mod-js *[data-ix="display-none-on-load-stretching"] {
   display: none;
 }
@@ -2705,17 +2749,6 @@ html.w-mod-js *[data-ix="new-interaction"] {
 
 html.w-mod-js *[data-ix="slowly-blend-in"] {
   opacity: 0;
-}
-
-html.w-mod-js *[data-ix="get-ready-appear-disappear"] {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  opacity: 0;
-  -webkit-transform: scale(0.5, 0.5);
-  -ms-transform: scale(0.5, 0.5);
-  transform: scale(0.5, 0.5);
 }
 
 html.w-mod-js *[data-ix="breathe-center"] {
