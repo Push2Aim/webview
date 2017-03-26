@@ -18,7 +18,7 @@ class Clock extends Component {
         let date = new Date();
         date.setSeconds(date.getSeconds() + props.duration);
         this.state = {
-            animations: ["", "", "", ""],
+            style: {},
             started: false,
             countdown: props.duration,
             waitStarted: false,
@@ -30,13 +30,13 @@ class Clock extends Component {
         return (
             <div className="wrapper Clock"
                  onClick={this.setAnimations.bind(this)}
-                 style={{animation: this.state.animations[0]}}>
-                {/*<div className="pie spinner"*/}
-                     {/*style={{animation: this.state.animations[1]}}></div>*/}
-                {/*<div className="pie filler"*/}
-                     {/*style={{animation: this.state.animations[2]}}></div>*/}
-                {/*<div className="mask"*/}
-                     {/*style={{animation: this.state.animations[3]}}></div>*/}
+                 style={this.state.style}>
+                <div className="pie spinner"
+                     style={this.state.style}></div>
+                <div className="pie filler"
+                     style={this.state.style}></div>
+                <div className="mask"
+                     style={this.state.style}></div>
                 <FormattedTimer started={this.state.started} timer={this.state.countdown}/>
             </div>
         );
@@ -44,12 +44,10 @@ class Clock extends Component {
 
     setAnimations() {
         this.setState({
-            animations: [
-                "size " + this.props.duration + "s cubic-bezier(0.86, 0, 0.07, 1) 1 forwards",
-                "rota " + this.props.duration + "s linear 1 forwards",
-                "opa " + this.props.duration + "s steps(1, end) 1 reverse forwards",
-                "opa " + this.props.duration + "s steps(1, end) 1 forwards"
-            ]
+            style: {
+                animationPlayState: "running",
+                animationDuration: this.props.duration + "s",
+            }
         });
     }
 
