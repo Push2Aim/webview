@@ -3,15 +3,6 @@ import "./Clock.css";
 import config from "./config";
 
 
-function FormattedTimer(props) {
-    let date = new Date(0);
-    date.setSeconds(props.timer);
-    if (props.started && date.getHours()===1)
-        return <h1 id="countdown">{date.getMinutes() + ":" + date.getSeconds()}</h1>;
-    else
-        return <div className="get-ready" data-ix="get-ready-appear-disappear">get ready</div>;
-}
-
 class Clock extends Component {
     constructor(props, context) {
         super(props, context);
@@ -27,24 +18,30 @@ class Clock extends Component {
     }
 
     render() {
-        return (
-            <div className="wrapper Clock"
-                 onClick={this.setAnimations.bind(this)}
-                 style={this.state.style}>
-                <div className="pie spinner"
-                     style={this.state.style}></div>
-                <div className="pie filler"
-                     style={this.state.style}></div>
-                <div className="mask"
-                     style={this.state.style}></div>
-                <FormattedTimer started={this.state.started} timer={this.state.countdown}/>
-            </div>
-        );
+        let date = new Date(0);
+        date.setSeconds(this.state.countdown);
+        if (this.state.started && date.getHours() === 1)
+            return (
+                <div className="wrapper"
+                     onClick={this.setAnimations.bind(this)}
+                     style={this.state.style}>
+                    <div className="pie spinner"
+                         style={this.state.style}></div>
+                    <div className="pie filler"
+                         style={this.state.style}></div>
+                    <div className="mask"
+                         style={this.state.style}></div>
+                </div>);
+        else
+            return <div onClick={this.setAnimations.bind(this)}
+                        className="get-ready">get ready</div>;
+
     }
 
     setAnimations() {
         this.setState({
             style: {
+                waitStarted: false, started: true,
                 animationPlayState: "running",
                 animationDuration: this.props.duration + "s",
             }
@@ -86,7 +83,6 @@ class Clock extends Component {
                 wait: prevState.wait - 1
             }));
             if (this.state.wait < 0) {
-                this.setState({waitStarted: false, started: true});
                 this.setAnimations();
             }
         }
@@ -95,7 +91,7 @@ class Clock extends Component {
     }
 
     nextSlide() {
-        if(!this.props.disableNext)
+        if (!this.props.disableNext)
             window.$("#nextSlide").trigger("tap");
         this.updateSliderIndex();
     }
@@ -103,7 +99,7 @@ class Clock extends Component {
     updateSliderIndex() {
         let sliderIndex = this.getSliderIndex();
         if (this.props.cIndex)
-        document.title = config[this.props.cIndex].data[sliderIndex].title;
+            document.title = config[this.props.cIndex].data[sliderIndex].title;
     }
 
     getSliderIndex() {

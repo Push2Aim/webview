@@ -4,47 +4,47 @@ const config = [
         "location": "home",
         "duration": 30,
         "data": [
-            {
-                "type": "Welcome",
-                "title": "Welcome",
-                "timer": 7,
-                "texts": {
-                    "title": "Welcome to your home workout!",
-                    "text": "You're going to warm up doing cardio, then do some stretch figures twice, and lastly finish it off with a challenging workout.",
-                },
-                "images": {
-                    "neck": path + "/images/NeckWeb.png",
-                    "burnMagni": path + "/images/BurnMagnifier.png",
-                    "moveMagni": path + "/images/MoveMagnifier.png",
-                    "shoulder": path + "/images/ShouldersWeb.png",
-                },
-                "need":[
-                    {
-                        "text": "chair",
-                        "src": path + "/images/chair.png"
-                    },
-                    {
-                        "text": "yoga mat",
-                        "src": path + "/images/YogaMat.png"
-                    },
-                    {
-                        "text": "chair",
-                        "src": path + "/images/chair.png"
-                    },
-                    {
-                        "text": "yoga mat",
-                        "src": path + "/images/YogaMat.png"
-                    },
-                    {
-                        "text": "chair",
-                        "src": path + "/images/chair.png"
-                    },
-                    {
-                        "text": "yoga mat",
-                        "src": path + "/images/YogaMat.png"
-                    },
-                ]
-            },
+            // {
+            //     "type": "Welcome",
+            //     "title": "Welcome",
+            //     "timer": 7,
+            //     "texts": {
+            //         "title": "Welcome to your home workout!",
+            //         "text": "You're going to warm up doing cardio, then do some stretch figures twice, and lastly finish it off with a challenging workout.",
+            //     },
+            //     "images": {
+            //         "neck": path + "/images/NeckWeb.png",
+            //         "burnMagni": path + "/images/BurnMagnifier.png",
+            //         "moveMagni": path + "/images/MoveMagnifier.png",
+            //         "shoulder": path + "/images/ShouldersWeb.png",
+            //     },
+            //     "need":[
+            //         {
+            //             "text": "chair",
+            //             "src": path + "/images/chair.png"
+            //         },
+            //         {
+            //             "text": "yoga mat",
+            //             "src": path + "/images/YogaMat.png"
+            //         },
+            //         {
+            //             "text": "chair",
+            //             "src": path + "/images/chair.png"
+            //         },
+            //         {
+            //             "text": "yoga mat",
+            //             "src": path + "/images/YogaMat.png"
+            //         },
+            //         {
+            //             "text": "chair",
+            //             "src": path + "/images/chair.png"
+            //         },
+            //         {
+            //             "text": "yoga mat",
+            //             "src": path + "/images/YogaMat.png"
+            //         },
+            //     ]
+            // },
             {
                 "type": "Warmup",
                 "title": "Jumping Jack",
