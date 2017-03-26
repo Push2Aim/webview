@@ -40,8 +40,8 @@ class Clock extends Component {
 
     setAnimations() {
         this.setState({
+            waitStarted: false, started: true,
             style: {
-                waitStarted: false, started: true,
                 animationPlayState: "running",
                 animationDuration: this.props.duration + "s",
             }
