@@ -59,18 +59,6 @@ const config = [
             },
             {
                 "type": "Warmup",
-                "title": "Break",
-                "texts": {
-                    "heading": "Break",
-                    "explanation": "Don't be completely static, shake it off a bit.",
-                },
-                "timer": 30,
-                "images": {
-                    "pic": "",
-                },
-            },
-            {
-                "type": "Warmup",
                 "title": "Jumping Jack",
                 "texts": {
                     "heading": "Jumping Jack",
@@ -79,18 +67,6 @@ const config = [
                 "timer": 120,
                 "images": {
                     "pic": path + "/images/JumpingJackWarmup.png",
-                },
-            },
-            {
-                "type": "Warmup",
-                "title": "Break",
-                "texts": {
-                    "heading": "Break",
-                    "explanation": "Don't be completely static, shake it off a bit.",
-                },
-                "timer": 30,
-                "images": {
-                    "pic": "",
                 },
             },
             {
@@ -379,18 +355,6 @@ const config = [
             },
             {
                 "type": "Warmup",
-                "title": "Break",
-                "texts": {
-                    "heading": "Break",
-                    "explanation": "Don't be completely static, shake it off a bit.",
-                },
-                "timer": 30,
-                "images": {
-                    "pic": "",
-                },
-            },
-            {
-                "type": "Warmup",
                 "title": "Jumping Jack",
                 "texts": {
                     "heading": "Jumping Jack",
@@ -399,18 +363,6 @@ const config = [
                 "timer": 120,
                 "images": {
                     "pic": path + "/images/JumpingJackWarmup.png",
-                },
-            },
-            {
-                "type": "Warmup",
-                "title": "Break",
-                "texts": {
-                    "heading": "Break",
-                    "explanation": "Don't be completely static, shake it off a bit.",
-                },
-                "timer": 30,
-                "images": {
-                    "pic": "",
                 },
             },
             {
