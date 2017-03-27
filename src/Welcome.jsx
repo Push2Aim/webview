@@ -17,14 +17,7 @@ class Welcome extends Component {
                                     <p className="welcome-what-you-do">{this.props.data.texts.text}</p></div>
                             </div>
                         </div>
-                        <div className="w-slide">
-                            <div className="content-parent welcome welcome-what-you-need"><h1
-                                className="stretching-title what-you-need-title">What You Need</h1>
-                                <div className="tut-welcome-what-you-need" data-ix="new-interaction">
-                                    {this.buildNeed()}
-                                </div>
-                            </div>
-                        </div>
+                        {this.buildNeed()}
                         <div className="w-slide">
                             <div className="behind-stretch fg"></div>
                             <div className="fg"></div>
@@ -94,6 +87,20 @@ class Welcome extends Component {
         );
     }
 
+    buildNeed() {
+        if (this.props.data.need)
+        return (
+            <div className="w-slide">
+                <div className="content-parent welcome welcome-what-you-need"><h1
+                    className="stretching-title what-you-need-title">What You Need</h1>
+                    <div className="tut-welcome-what-you-need" data-ix="new-interaction">
+                        {this.props.data.need.map(this.whatYouNeed)}
+                    </div>
+                </div>
+            </div>
+        );
+    }
+
     whatYouNeed(need) {
         return (
             <div className="what-you-need-father">
@@ -101,10 +108,6 @@ class Welcome extends Component {
                      src={need.src}/>
                 <div className="you-need-a">{need.text}</div>
             </div>)
-    }
-
-    buildNeed() {
-        return this.props.data.need.map(this.whatYouNeed);
     }
 }
 
