@@ -1239,7 +1239,7 @@ const config = [
                     },
                     {
                         "text": "space to run",
-                        "src": path + "/images/empty.png"
+                        "src": path + "/images/SpaceToRun.png"
                     },
                     {
                         "text": "bench",
@@ -1247,7 +1247,7 @@ const config = [
                     },
                     {
                         "text": "space to run",
-                        "src": path + "/images/empty.png"
+                        "src": path + "/images/SpaceToRun.png"
                     },
                     {
                         "text": "bench",
@@ -1255,7 +1255,7 @@ const config = [
                     },
                     {
                         "text": "space to run",
-                        "src": path + "/images/empty.png"
+                        "src": path + "/images/SpaceToRun.png"
                     },
                 ]
             },
