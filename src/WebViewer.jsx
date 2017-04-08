@@ -43,7 +43,7 @@ class WebViewer extends Component {
     render() {
         this.updateSliderIndex();
         return (
-            <div className="slider w-slider" data-animation="slide" data-disable-swipe="1" data-duration="500"
+            <div className="slider w-slider" data-animation="slide" data-disable-swipe="0" data-duration="500"
                  data-infinite="1">
                 <div className="w-slider-mask">
                     {this.buildView(this.state.cIndex)}
