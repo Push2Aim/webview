@@ -25,6 +25,8 @@ class Clock extends Component {
                 <div className="wrapper"
                      onClick={this.setAnimations.bind(this)}
                      style={this.state.style}>
+                    <div></div>
+                    <div></div>
                     <div className="pie spinner"
                          style={this.state.style}></div>
                     <div className="pie filler"
