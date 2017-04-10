@@ -109,10 +109,8 @@ class WebViewer extends Component {
     }
 
     parsDuration(duration) {
-        if (!duration || duration === "")
-            return 30;
-
         duration = Number.parseInt(duration, 10);
+        if (!duration) return 30;
         return duration <= 5 ? 5 : duration <= 60 ?
                 Math.floor(duration / 5) * 5 : 60;
     }
