@@ -10,7 +10,7 @@ class Clock extends Component {
         date.setSeconds(date.getSeconds() + props.duration);
         this.state = {
             style: {},
-            started: false,
+            started: this.props.started || false,
             countdown: props.duration,
             waitStarted: false,
             wait: this.props.wait || 6,
@@ -83,14 +83,12 @@ class Clock extends Component {
     }
 
     finishedWaiting() {
-        if (this.state.waitStarted) {
+        if (this.state.waitStarted)
             this.setState((prevState, props) => ({
-                wait: prevState.wait - 1
-            }));
-            if (this.state.wait < 0) {
-                this.setAnimations();
-            }
-        }
+            wait: prevState.wait - 1
+        }));
+        if (this.state.wait < 0 || this.state.started)
+            this.setAnimations();
 
         return this.state.started;
     }

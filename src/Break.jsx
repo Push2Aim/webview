@@ -10,7 +10,7 @@ class Break extends Component {
                     <div className="timer-button-boss">
                         <div className="timer-button-supervisor">
                             <a className="breathetime timer w-inline-block" href="#">
-                                <Clock duration={this.props.data.timer} cIndex={this.props.cIndex} sIndex={this.props.sIndex}/>
+                                <Clock started={true} duration={this.props.data.timer} cIndex={this.props.cIndex} sIndex={this.props.sIndex}/>
                             </a>
                         </div>
                     </div>
