@@ -1272,7 +1272,7 @@ const config = [
                 },
             },
             {
-                "type": "Break",
+                "type": "Break&Breathe",
                 "title": "Break",
                 "timer": 30,
             },
