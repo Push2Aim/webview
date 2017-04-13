@@ -68,7 +68,19 @@ const config = [
             },
             {
                 "type": "Stretching",
-                "title": "Neck Stretching",
+                "title": "Neck Stretching 1st",
+                "texts": {
+                    "heading": "Stretching",
+                    "explanation": "Take your time. Breathe all the time. Don't spoil yourself, but don't stretch to agony.",
+                },
+                "timer": 10,
+                "images": {
+                    "pic": path + "/images/NeckWeb.png",
+                },
+            },
+            {
+                "type": "Stretching",
+                "title": "Neck Stretching 2nd",
                 "texts": {
                     "heading": "Stretching",
                     "explanation": "Take your time. Breathe all the time. Don't spoil yourself, but don't stretch to agony.",
