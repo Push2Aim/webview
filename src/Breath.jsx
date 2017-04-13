@@ -4,14 +4,15 @@ import "./Breath.css";
 
 class Breath extends Component {
     render() {
+        let style = {animationDuration: this.props.breathDuration + "s"};
         return (
             <div className="breathing">
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
+                <p style={style}></p>
+                <p style={style}></p>
+                <p style={style}></p>
+                <p style={style}></p>
+                <p style={style}></p>
+                <p style={style}></p>
             </div>
         );
     }

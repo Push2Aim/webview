@@ -16,7 +16,7 @@ class Break extends Component {
                     </div>
                     <div className="breathetimeholder pic-boss">
                         <div className="breathetime-boss">
-                            <Breath/>
+                            <Breath breathDuration={this.props.data.breathDuration}/>
                         </div>
                     </div>
                 </div>
