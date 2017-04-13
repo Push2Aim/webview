@@ -22,15 +22,15 @@ function doneLoading() {
 }
 
 function getFeatures() {
-    return doneLoading.then(extension =>
+    return doneLoading().then(extension =>
         extension.getSupportedFeatures(result =>
             result.supported_features, err => {
-            throw err;
+            throw new Error(err);
         }));
 }
 
 function getUserID() {
-    return doneLoading.then(extension =>
+    return doneLoading().then(extension =>
         extension.getUserID(function success(uids) {
             // User ID was successfully obtained.
             return uids.psid;
@@ -63,10 +63,10 @@ function share(message) {
                 }
             }
         };
-    return doneLoading.then(extension =>
+    return doneLoading().then(extension =>
         extension.beginShareFlow(() => {
                 // Share successful
-                return extension;
+                return "Share successful";
             }, (errorCode, errorMessage) => {
                 // The user was not able to share
                 throw new Error(errorCode, errorMessage);
@@ -75,10 +75,10 @@ function share(message) {
 }
 
 function close() {
-    return doneLoading.then(extension =>
+    return doneLoading().then(extension =>
         extension.requestCloseBrowser(() =>
-                extension,
+                "Close successful",
             err => {
-                throw err;
+                throw new Error(err);
             }));
 }
