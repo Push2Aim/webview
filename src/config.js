@@ -2,6 +2,337 @@ let path = "/webview";
 const config = [
     {
         "location": "home",
+        "duration": 10,
+        "data": [{
+            "type": "Welcome",
+            "title": "Welcome",
+            "timer": 7,
+            "texts": {
+                "title": "Welcome to your home workout!",
+                "text": "No time, let's just start moving.",
+            },
+            "images": {
+                "neck": path + "/images/NeckWeb.png",
+                "burnMagni": path + "/images/BurnMagnifier.png",
+                "moveMagni": path + "/images/MoveMagnifier.png",
+                "shoulder": path + "/images/ShouldersWeb.png",
+            },
+        },
+            {
+                "type": "Warmup",
+                "title": "Jumping Jack",
+                "texts": {
+                    "heading": "Jumping Jack",
+                    "explanation": "Don't go too fast, but I want to see your pulse high after. Let's go!",
+                },
+                "timer": 60,
+                "images": {
+                    "pic": path + "/images/JumpingJackWarmup.png",
+                },
+            },
+            {
+                "type": "Stretching",
+                "title": "Chest Stretching",
+                "texts": {
+                    "heading": "Stretching",
+                    "explanation": "Take your time. Breathe all the time. Don't spoil yourself, but don't stretch to agony.",
+                },
+                "timer": 10,
+                "images": {
+                    "pic": path + "/images/ChestsWeb.png",
+                },
+            },
+            {
+                "type": "Stretching",
+                "title": "Shoulder Stretching Right",
+                "texts": {
+                    "heading": "Stretching",
+                    "explanation": "Take your time. Breathe all the time. Don't spoil yourself, but don't stretch to agony.",
+                },
+                "timer": 10,
+                "images": {
+                    "pic": path + "/images/ShouldersWeb.png",
+                },
+            },
+            {
+                "type": "Stretching",
+                "title": "Shoulder Stretching Left",
+                "texts": {
+                    "heading": "Stretching",
+                    "explanation": "Take your time. Breathe all the time. Don't spoil yourself, but don't stretch to agony.",
+                },
+                "timer": 10,
+                "images": {
+                    "pic": path + "/images/ShouldersWeb.png",
+                },
+            },
+            {
+                "type": "Stretching",
+                "title": "Neck Stretching 1st",
+                "texts": {
+                    "heading": "Stretching",
+                    "explanation": "Take your time. Breathe all the time. Don't spoil yourself, but don't stretch to agony.",
+                },
+                "timer": 10,
+                "images": {
+                    "pic": path + "/images/NeckWeb.png",
+                },
+            },
+            {
+                "type": "Stretching",
+                "title": "Neck Stretching 2nd",
+                "texts": {
+                    "heading": "Stretching",
+                    "explanation": "Take your time. Breathe all the time. Don't spoil yourself, but don't stretch to agony.",
+                },
+                "timer": 10,
+                "images": {
+                    "pic": path + "/images/NeckWeb.png",
+                },
+            },
+            {
+                "type": "Stretching",
+                "title": "Hamstring Stretching",
+                "texts": {
+                    "heading": "Stretching",
+                    "explanation": "Take your time. Breathe all the time. Don't spoil yourself, but don't stretch to agony.",
+                },
+                "timer": 10,
+                "images": {
+                    "pic": path + "/images/HamstringWeb.png",
+                },
+            },
+            {
+                "type": "AMRAPtut",
+                "title": "3min AMRAP",
+                "background": "linear-gradient(90deg, rgba(249, 255, 116, .66), rgba(162, 243, 124, .66) 40%, rgba(68, 255, 68, .66)), linear-gradient(180deg, #fff, #fff)",
+                "texts": {
+                    "heading": "3min AMRAP",
+                    "explanation": "Those 3 exercises form 1 round. Do As Many Rounds As Possible within 3min.",
+                    "tutButton": "How to do those 3 exercises",
+                    "howTo": "Within 3 min, do as many rounds as you can, consisting of the shown 3 exercises.",
+                },
+                "videos": [{
+                    "title": "Squats",
+                    "src": "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FDy28eq2PjcM%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DDy28eq2PjcM&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FDy28eq2PjcM%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"
+                }, {
+                    "title": "Push-Ups",
+                    "src": "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FIODxDxX7oi4%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DIODxDxX7oi4&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FIODxDxX7oi4%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"
+                }, {
+                    "title": "Sit-Ups",
+                    "src": "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fy5BpvYGyVb0%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dy5BpvYGyVb0&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fy5BpvYGyVb0%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"
+                },],
+                "images": {
+                    "workout": "https://jspicgen.herokuapp.com/?length=5",
+                }
+            },
+            {
+                "type": "AMRAP",
+                "title": "3min AMRAP",
+                "background": "linear-gradient(90deg, rgba(249, 255, 116, .66), rgba(162, 243, 124, .66) 40%, rgba(68, 255, 68, .66)), linear-gradient(180deg, #fff, #fff)",
+                "texts": {
+                    "heading": "3min AMRAP",
+                    "explanation": "Those 3 exercises form 1 round. Do As Many Rounds As Possible within 3 min.",
+                    "tutButton": "How to do those 3 exercises",
+                },
+                "timer": 600,
+                "videos": [{
+                    "title": "Mountain Climbers",
+                    "src": "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FDyeZM-_VnRc%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DDyeZM-_VnRc&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FDyeZM-_VnRc%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"
+                }, {
+                    "title": "Squats",
+                    "src": "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FDy28eq2PjcM%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DDy28eq2PjcM&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FDy28eq2PjcM%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"
+                }, {
+                    "title": "Push-Ups",
+                    "src": "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FIODxDxX7oi4%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DIODxDxX7oi4&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FIODxDxX7oi4%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"
+                }, {
+                    "title": "Sit-Ups",
+                    "src": "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fy5BpvYGyVb0%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dy5BpvYGyVb0&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fy5BpvYGyVb0%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"
+                },],
+                "images": {
+                    "workout": "https://jspicgen.herokuapp.com/?length=5",
+                }
+            },
+            {
+                "type": "Trophy",
+                "title": "Congratulations",
+                "background": "linear-gradient(0deg, red, #9d92ec 35%, #00b1c9)",
+                "images": {
+                    "trophy_pic": path + "/images/Trophy.png",
+                },
+                "texts": {
+                    "title": "1 Step Closer To Your Goal!",
+                    "text": "Great that you fit in those 5 minutes.",
+                }
+            },
+        ]
+    },
+    {
+        "location": "home",
+        "duration": 10,
+        "data": [{
+            "type": "Welcome",
+            "title": "Welcome",
+            "timer": 7,
+            "texts": {
+                "title": "Welcome to your home workout!",
+                "text": "First, quick cardio, then quick stretching, and lastly a challenging workout.",
+            },
+            "images": {
+                "neck": path + "/images/NeckWeb.png",
+                "burnMagni": path + "/images/BurnMagnifier.png",
+                "moveMagni": path + "/images/MoveMagnifier.png",
+                "shoulder": path + "/images/ShouldersWeb.png",
+            },
+        },
+            {
+                "type": "Warmup",
+                "title": "Jumping Jack",
+                "texts": {
+                    "heading": "Jumping Jack",
+                    "explanation": "Don't go too fast, but I want to see your pulse high after. Let's go!",
+                },
+                "timer": 120,
+                "images": {
+                    "pic": path + "/images/JumpingJackWarmup.png",
+                },
+            },
+            {
+                "type": "Stretching",
+                "title": "Chest Stretching",
+                "texts": {
+                    "heading": "Stretching",
+                    "explanation": "Take your time. Breathe all the time. Don't spoil yourself, but don't stretch to agony.",
+                },
+                "timer": 10,
+                "images": {
+                    "pic": path + "/images/ChestsWeb.png",
+                },
+            },
+            {
+                "type": "Stretching",
+                "title": "Shoulder Stretching Right",
+                "texts": {
+                    "heading": "Stretching",
+                    "explanation": "Take your time. Breathe all the time. Don't spoil yourself, but don't stretch to agony.",
+                },
+                "timer": 10,
+                "images": {
+                    "pic": path + "/images/ShouldersWeb.png",
+                },
+            },
+            {
+                "type": "Stretching",
+                "title": "Shoulder Stretching Left",
+                "texts": {
+                    "heading": "Stretching",
+                    "explanation": "Take your time. Breathe all the time. Don't spoil yourself, but don't stretch to agony.",
+                },
+                "timer": 10,
+                "images": {
+                    "pic": path + "/images/ShouldersWeb.png",
+                },
+            },
+            {
+                "type": "Stretching",
+                "title": "Neck Stretching 1st",
+                "texts": {
+                    "heading": "Stretching",
+                    "explanation": "Take your time. Breathe all the time. Don't spoil yourself, but don't stretch to agony.",
+                },
+                "timer": 10,
+                "images": {
+                    "pic": path + "/images/NeckWeb.png",
+                },
+            },
+            {
+                "type": "Stretching",
+                "title": "Neck Stretching 2nd",
+                "texts": {
+                    "heading": "Stretching",
+                    "explanation": "Take your time. Breathe all the time. Don't spoil yourself, but don't stretch to agony.",
+                },
+                "timer": 10,
+                "images": {
+                    "pic": path + "/images/NeckWeb.png",
+                },
+            },
+            {
+                "type": "Stretching",
+                "title": "Hamstring Stretching",
+                "texts": {
+                    "heading": "Stretching",
+                    "explanation": "Take your time. Breathe all the time. Don't spoil yourself, but don't stretch to agony.",
+                },
+                "timer": 10,
+                "images": {
+                    "pic": path + "/images/HamstringWeb.png",
+                },
+            },
+            {
+                "type": "AMRAPtut",
+                "title": "7min AMRAP",
+                "background": "linear-gradient(90deg, rgba(249, 255, 116, .66), rgba(162, 243, 124, .66) 40%, rgba(68, 255, 68, .66)), linear-gradient(180deg, #fff, #fff)",
+                "texts": {
+                    "heading": "7min AMRAP",
+                    "explanation": "Those 3 exercises form 1 round. Do As Many Rounds As Possible within 7min.",
+                    "tutButton": "How to do those 3 exercises",
+                    "howTo": "Within 7 min, do as many rounds as you can, consisting of the shown 3 exercises.",
+                },
+                "videos": [{
+                    "title": "Squats",
+                    "src": "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FDy28eq2PjcM%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DDy28eq2PjcM&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FDy28eq2PjcM%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"
+                }, {
+                    "title": "Push-Ups",
+                    "src": "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FIODxDxX7oi4%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DIODxDxX7oi4&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FIODxDxX7oi4%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"
+                }, {
+                    "title": "Sit-Ups",
+                    "src": "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fy5BpvYGyVb0%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dy5BpvYGyVb0&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fy5BpvYGyVb0%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"
+                },],
+                "images": {
+                    "workout": "https://jspicgen.herokuapp.com/?length=10",
+                }
+            },
+            {
+                "type": "AMRAP",
+                "title": "7min AMRAP",
+                "background": "linear-gradient(90deg, rgba(249, 255, 116, .66), rgba(162, 243, 124, .66) 40%, rgba(68, 255, 68, .66)), linear-gradient(180deg, #fff, #fff)",
+                "texts": {
+                    "heading": "7min AMRAP",
+                    "explanation": "Those 3 exercises form 1 round. Do As Many Rounds As Possible within 7 min.",
+                    "tutButton": "How to do those 3 exercises",
+                },
+                "timer": 600,
+                "videos": [{
+                    "title": "Squats",
+                    "src": "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FDy28eq2PjcM%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DDy28eq2PjcM&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FDy28eq2PjcM%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"
+                }, {
+                    "title": "Push-Ups",
+                    "src": "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FIODxDxX7oi4%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DIODxDxX7oi4&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FIODxDxX7oi4%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"
+                }, {
+                    "title": "Sit-Ups",
+                    "src": "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fy5BpvYGyVb0%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dy5BpvYGyVb0&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fy5BpvYGyVb0%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"
+                },],
+                "images": {
+                    "workout": "https://jspicgen.herokuapp.com/?length=10",
+                }
+            },
+            {
+                "type": "Trophy",
+                "title": "Congratulations",
+                "background": "linear-gradient(0deg, red, #9d92ec 35%, #00b1c9)",
+                "images": {
+                    "trophy_pic": path + "/images/Trophy.png",
+                },
+                "texts": {
+                    "title": "1 Step Closer To Your Goal!",
+                    "text": "Great that you fit in those 10 minutes.",
+                }
+            },
+        ]
+    },
+    {
+        "location": "home",
         "duration": 15,
         "data": [{
             "type": "Welcome",
