@@ -175,7 +175,7 @@ const config = [
             "title": "Welcome",
             "timer": 7,
             "texts": {
-                "title": "Welcome to your home workout!",
+                "title": "Welcome to your indoor workout!",
                 "text": "First, quick cardio, then quick stretching, and lastly a challenging workout.",
             },
             "images": {
@@ -339,7 +339,7 @@ const config = [
             "title": "Welcome",
             "timer": 7,
             "texts": {
-                "title": "Welcome to your home workout!",
+                "title": "Welcome to your indoor workout!",
                 "text": "First, warm up doing cardio, second, some stretch figures, and lastly a challenging workout.",
             },
             "images": {
@@ -533,7 +533,7 @@ const config = [
             "title": "Welcome",
             "timer": 7,
             "texts": {
-                "title": "Welcome to your home workout!",
+                "title": "Welcome to your indoor workout!",
                 "text": "First, warm up doing cardio, second, some stretch figures twice, and lastly a challenging workout.",
             },
             "images": {
@@ -841,7 +841,7 @@ const config = [
             "title": "Welcome",
             "timer": 7,
             "texts": {
-                "title": "Welcome to your home workout!",
+                "title": "Welcome to your indoor workout!",
                 "text": "First, warm up doing cardio, second, some stretch figures twice, and lastly a challenging workout.",
             },
             "images": {
@@ -1203,7 +1203,7 @@ const config = [
             "title": "Welcome",
             "timer": 7,
             "texts": {
-                "title": "Welcome to your home workout!",
+                "title": "Welcome to your indoor workout!",
                 "text": "You're going to warm up doing cardio, then do some stretch figures twice, and lastly finish it off with a challenging workout.",
             },
             "images": {
@@ -1566,7 +1566,7 @@ const config = [
                 "title": "Welcome",
                 "timer": 7,
                 "texts": {
-                    "title": "Welcome to your home workout!",
+                    "title": "Welcome to your indoor workout!",
                     "text": "You're going to warm up doing cardio, then do some stretch figures twice, and lastly finish it off with a challenging workout.",
                 },
                 "images": {
