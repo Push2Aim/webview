@@ -1557,6 +1557,7 @@ const config = [
             },
         ]
     },
+    
     {
         "location": "outdoor",
         "duration": 30,
@@ -2591,7 +2592,7 @@ const config = [
                     "explanation": "Those 7 exercises form 1 round. Do As Many Rounds As Possible within 30min.",
                     "tutButton": "How to do those 7 exercises",
                 },
-                "timer": 1500,
+                "timer": 1800,
                 "videos": [
                     {
                         "title": "Mtn. Clmbrs",
@@ -2954,7 +2955,7 @@ const config = [
                     "explanation": "Those 7 exercises form 1 round. Do As Many Rounds As Possible within 30min.",
                     "tutButton": "How to do those 7 exercises",
                 },
-                "timer": 1500,
+                "timer": 1800,
                 "videos": [
                     {
                         "title": "Mtn. Clmbrs",
@@ -3341,7 +3342,7 @@ const config = [
                     "explanation": "Those 7 exercises form 1 round. Do As Many Rounds As Possible within 30min.",
                     "tutButton": "How to do those 7 exercises",
                 },
-                "timer": 1500,
+                "timer": 1800,
                 "videos": [
                     {
                         "title": "Mtn. Clmbrs",
@@ -3956,7 +3957,7 @@ const config = [
                     "explanation": "Those 7 exercises form 1 round. Do As Many Rounds As Possible within 30min.",
                     "tutButton": "How to do those 7 exercises",
                 },
-                "timer": 1500,
+                "timer": 1800,
                 "videos": [
                     {
                         "title": "Mtn. Clmbrs",
@@ -4583,7 +4584,7 @@ const config = [
                     "explanation": "Those 7 exercises form 1 round. Do As Many Rounds As Possible within 30min.",
                     "tutButton": "How to do those 7 exercises",
                 },
-                "timer": 1500,
+                "timer": 1800,
                 "videos": [
                     {
                         "title": "Mtn. Clmbrs",
