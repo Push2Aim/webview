@@ -2,7 +2,7 @@ let path = "/webview";
 const config = [
     {
         "location": "home",
-        "duration": 10,
+        "duration": 5,
         "data": [{
             "type": "Welcome",
             "title": "Welcome",
@@ -123,7 +123,7 @@ const config = [
                     "src": "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fy5BpvYGyVb0%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dy5BpvYGyVb0&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fy5BpvYGyVb0%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"
                 },],
                 "images": {
-                    "workout": "https://jspicgen.herokuapp.com/?length=5",
+                    "workout": "https://jspicgen.herokuapp.com/?duration=5&location=home",
                 }
             },
             {
@@ -150,7 +150,7 @@ const config = [
                     "src": "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fy5BpvYGyVb0%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dy5BpvYGyVb0&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fy5BpvYGyVb0%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"
                 },],
                 "images": {
-                    "workout": "https://jspicgen.herokuapp.com/?length=5",
+                    "workout": "https://jspicgen.herokuapp.com/?duration=5&location=home",
                 }
             },
             {
@@ -290,7 +290,7 @@ const config = [
                     "src": "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fy5BpvYGyVb0%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dy5BpvYGyVb0&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fy5BpvYGyVb0%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"
                 },],
                 "images": {
-                    "workout": "https://jspicgen.herokuapp.com/?length=10",
+                    "workout": "https://jspicgen.herokuapp.com/?duration=10&location=home",
                 }
             },
             {
@@ -314,7 +314,7 @@ const config = [
                     "src": "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fy5BpvYGyVb0%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dy5BpvYGyVb0&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fy5BpvYGyVb0%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"
                 },],
                 "images": {
-                    "workout": "https://jspicgen.herokuapp.com/?length=10",
+                    "workout": "https://jspicgen.herokuapp.com/?duration=10&location=home",
                 }
             },
             {
@@ -481,7 +481,7 @@ const config = [
                     "src": "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fy5BpvYGyVb0%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dy5BpvYGyVb0&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fy5BpvYGyVb0%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"
                 },],
                 "images": {
-                    "workout": "https://jspicgen.herokuapp.com/?length=15",
+                    "workout": "https://jspicgen.herokuapp.com/?duration=15&location=home",
                 }
             },
             {
@@ -508,7 +508,7 @@ const config = [
                     "src": "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fy5BpvYGyVb0%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dy5BpvYGyVb0&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fy5BpvYGyVb0%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"
                 },],
                 "images": {
-                    "workout": "https://jspicgen.herokuapp.com/?length=15",
+                    "workout": "https://jspicgen.herokuapp.com/?duration=15&location=home",
                 }
             },
             {
@@ -789,7 +789,7 @@ const config = [
                     "src": "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fy5BpvYGyVb0%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dy5BpvYGyVb0&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fy5BpvYGyVb0%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"
                 },],
                 "images": {
-                    "workout": "https://jspicgen.herokuapp.com/?length=20",
+                    "workout": "https://jspicgen.herokuapp.com/?duration=20&location=home",
                 }
             },
             {
@@ -816,7 +816,7 @@ const config = [
                     "src": "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fy5BpvYGyVb0%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dy5BpvYGyVb0&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fy5BpvYGyVb0%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"
                 },],
                 "images": {
-                    "workout": "https://jspicgen.herokuapp.com/?length=20",
+                    "workout": "https://jspicgen.herokuapp.com/?duration=20&location=home",
                 }
             },
             {
@@ -1148,7 +1148,7 @@ const config = [
                     "src": "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FDeTBwEL4m7s%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DDeTBwEL4m7s&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FDeTBwEL4m7s%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"
                 },],
                 "images": {
-                    "workout": "https://jspicgen.herokuapp.com/?length=25",
+                    "workout": "https://jspicgen.herokuapp.com/?duration=25&location=home",
                 }
             },
             {
@@ -1178,7 +1178,7 @@ const config = [
                     "src": "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FDeTBwEL4m7s%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DDeTBwEL4m7s&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FDeTBwEL4m7s%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"
                 },],
                 "images": {
-                    "workout": "https://jspicgen.herokuapp.com/?length=25",
+                    "workout": "https://jspicgen.herokuapp.com/?duration=25&location=home",
                 }
             },
             {
@@ -1510,7 +1510,7 @@ const config = [
                     "src": "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FDeTBwEL4m7s%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DDeTBwEL4m7s&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FDeTBwEL4m7s%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"
                 },],
                 "images": {
-                    "workout": "https://jspicgen.herokuapp.com/?length=30",
+                    "workout": "https://jspicgen.herokuapp.com/?duration=30&location=home",
                 }
             },
             {
@@ -1540,7 +1540,7 @@ const config = [
                     "src": "//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FDeTBwEL4m7s%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DDeTBwEL4m7s&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FDeTBwEL4m7s%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube"
                 },],
                 "images": {
-                    "workout": "https://jspicgen.herokuapp.com/?length=30",
+                    "workout": "https://jspicgen.herokuapp.com/?duration=30&location=home",
                 }
             },
             {
@@ -1864,7 +1864,7 @@ const config = [
                     },
                 ],
                 "images": {
-                    "workout": "https://jspicgen.herokuapp.com/?outdoorlength=30",
+                    "workout": "https://jspicgen.herokuapp.com/?duration=30&location=outdoor",
                 }
             },
             {
@@ -1896,7 +1896,7 @@ const config = [
                     },
                 ],
                 "images": {
-                    "workout": "https://jspicgen.herokuapp.com/?outdoorlength=30",
+                    "workout": "https://jspicgen.herokuapp.com/?duration=30&location=outdoor",
                 }
             },
             {
