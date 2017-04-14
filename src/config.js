@@ -3021,7 +3021,7 @@ const config = [
             },
         ]
     },
-        {
+    {
         "location": "outdoor",
         "duration": 50,
         "data": [
@@ -3636,7 +3636,7 @@ const config = [
             },
         ]
     },
-        {
+    {
         "location": "outdoor",
         "duration": 55,
         "data": [
@@ -4263,7 +4263,7 @@ const config = [
             },
         ]
     },
-        {
+    {
         "location": "outdoor",
         "duration": 60,
         "data": [
