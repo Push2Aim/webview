@@ -6,12 +6,13 @@ module.exports = {
     share: share,
     close: close,
 };
-
+doneLoading();
 function doneLoading() {
     return new Promise((resolve, reject) => {
         try {
             if (MessengerExtensions) resolve(MessengerExtensions);
             window.extAsyncInit = () => {
+                console.log("doneLoading");
                 MessengerExtensions = window.MessengerExtensions;
                 resolve(window.MessengerExtensions);
             };
@@ -24,9 +25,8 @@ function doneLoading() {
 function getFeatures() {
     return doneLoading().then(extension =>
         extension.getSupportedFeatures(result =>
-            result.supported_features, err => {
-            throw new Error(err);
-        }));
+                result.supported_features,
+            err => new Error(err)));
 }
 
 function getUserID() {
@@ -36,7 +36,7 @@ function getUserID() {
             return uids.psid;
         }, (err, errorMessage) => {
             // Error handling code
-            throw new Error(err, errorMessage);
+            return new Error(err, errorMessage);
         }))
 }
 
@@ -63,22 +63,21 @@ function share(message) {
                 }
             }
         };
-    return doneLoading().then(extension =>
-        extension.beginShareFlow(() => {
+    return doneLoading().then(extension => {
+        return extension.beginShareFlow(() => {
                 // Share successful
                 return "Share successful";
             }, (errorCode, errorMessage) => {
                 // The user was not able to share
-                throw new Error(errorCode, errorMessage);
+                return new Error(errorCode, errorMessage);
             },
-            message, "broadcast"));
+            message, "broadcast");
+    });
 }
 
 function close() {
     return doneLoading().then(extension =>
-        extension.requestCloseBrowser(() =>
-                "Close successful",
-            err => {
-                throw new Error(err);
-            }));
+        extension.requestCloseBrowser(
+            () => "Close successful",
+            err => new Error(err)));
 }
