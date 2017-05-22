@@ -2687,7 +2687,7 @@ const config = [
                 "type": "Warmup",
                 "title": "Cool-Down Jumping Jack",
                 "texts": {
-                    "heading": "Cool-Down Jogging",
+                    "heading": "Cool-Down Jumping Jack",
                     "explanation": "Don't fall asleep, but this is a cool-down, therefore low-pace.",
                 },
                 "timer": 90,
@@ -3735,7 +3735,7 @@ const config = [
                 "type": "Warmup",
                 "title": "Cool-Down Walking in Place",
                 "texts": {
-                    "heading": "Cool-Down Walking in Place",
+                    "heading": "Cool-Down Walking",
                     "explanation": "This one's to relax and calm down the pulse a bit.",
                 },
                 "timer": 120,
@@ -4379,7 +4379,7 @@ const config = [
                 "type": "Warmup",
                 "title": "Cool-Down Walking in Place",
                 "texts": {
-                    "heading": "Cool-Down Walking in Place",
+                    "heading": "Cool-Down Walking",
                     "explanation": "This one's to relax and calm down the pulse a bit.",
                 },
                 "timer": 150,
