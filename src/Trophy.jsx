@@ -37,7 +37,7 @@ class Trophy extends Component {
 
     tick() {
         if (!this.state.hasSendXP && this.isOnCurrentSlide()) {
-            window.$.post(this.props.url + "/xp", {token: this.props.token});
+            window.$.post(this.props.url + "/xp", {token: this.props.token, type: "drill"});
             this.setState({hasSendXP: true})
         }
     }
