@@ -4,7 +4,8 @@ import WebViewer from "./WebViewer";
 import "./index.css";
 
 ReactDOM.render(
-    <WebViewer duration={getValue("duration")} location={getValue("location")}/>,
+    <WebViewer duration={getValue("duration")} location={getValue("location")}
+               token={getValue("token")} url={getValue("url")}/>,
   document.getElementById('root')
 );
 

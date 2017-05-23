@@ -83,7 +83,8 @@ class WebViewer extends Component {
             case "AMRAP":
                 return <AMRAP data={data} cIndex={cIndex} sIndex={sIndex}/>;
             case "Trophy":
-                return <Trophy data={data}/>;
+                return <Trophy data={data} sIndex={sIndex} token={this.props.token}
+                               url={this.props.url}/>;
             default:
                 return <p>unknown Type: {data.type}</p>;
         }

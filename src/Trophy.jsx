@@ -1,6 +1,13 @@
 import React, {Component} from "react";
 
 class Trophy extends Component {
+    constructor(props, context) {
+        super(props, context);
+        this.state = {
+            hasSendXP: false,
+        }
+    }
+
     render() {
         return (
             <div className="w-slide">
@@ -17,6 +24,26 @@ class Trophy extends Component {
                 </div>
             </div>
         );
+    }
+
+    componentDidMount() {
+        this.timerID = setInterval(
+            () => this.tick(), 1000);
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.timerID);
+    }
+
+    tick() {
+        if (!this.state.hasSendXP && this.isOnCurrentSlide()) {
+            window.$.post(this.props.url + "/xp", {token: this.props.token});
+            this.setState({hasSendXP: true})
+        }
+    }
+
+    isOnCurrentSlide() {
+        return this.props.sIndex === this.getSliderIndex();
     }
 }
 
