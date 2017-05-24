@@ -36,12 +36,12 @@ class Welcome extends Component {
                                 className="stretching-title">
                                 Stretching</h1>
                                 <div className="tutorial-area-text-boss-2 tutorial-move"
-                                     data-ix="body-part-to-move-text-appear"><p className="part-to-burn">The part to
+                                     data-ix="body-part-to-move-text-appear"><p className="part-to-move-and-burn">The part to
                                     move
                                     according to the ↙️</p></div>
                                 <div className="tutorial-area-text-boss tutorial-burn"
                                      data-ix="body-part-burn-text-appear">
-                                    <p className="part-to-burn">The body part that's supposed to burn</p></div>
+                                    <p className="part-to-move-and-burn">The body part that's supposed to burn</p></div>
                             </div>
                         </div>
                         <div className="w-slide">
