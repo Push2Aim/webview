@@ -13,7 +13,7 @@ class Clock extends Component {
             started: this.props.started || false,
             countdown: props.duration,
             waitStarted: false,
-            wait: this.props.wait || 7,
+            wait: this.props.wait || 5,
         }
     }
 
