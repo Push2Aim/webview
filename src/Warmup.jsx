@@ -9,7 +9,7 @@ class Warmup extends Component {
                     <div className="sidebar-warmup" data-ix="display-none-on-load-warmup">
                         <div className="close-button-boss">
                             <div className="duplicates tut-spread warmup-text">
-                                <a className="close-button-warmup w-button" data-ix="hide-button-warmup" href="#">X</a>
+                                <a className="close-button-warmup w-button" data-ix="hide-button-amrap-warmup" href="#">X</a>
                                 <h1 className="heading">{this.props.data.texts.heading}</h1>
                                 <p className="explanation">{this.props.data.texts.explanation}</p>
                             </div>
