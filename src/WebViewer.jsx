@@ -54,7 +54,7 @@ class WebViewer extends Component {
                 <div onClick={this.updateSliderIndex.bind(this)} className="w-slider-arrow-right" id="nextSlide">
                     <div className="w-icon-slider-right"></div>
                 </div>
-                <div onClick={this.nextSlide.bind(this)} className="start-workout-button" data-ix="start-button-blink">
+                <div onClick={this.nextSlide.bind(this)} className="start-workout-button" data-ix="disappear-start-button">
                     <div>Start</div>
                 </div>
                 <div onClick={this.updateSliderIndex.bind(this)} className="slide-nav-2 w-round w-slider-nav" id="SliderNav"></div>
