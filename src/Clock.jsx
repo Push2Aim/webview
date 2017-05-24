@@ -26,7 +26,6 @@ class Clock extends Component {
                      onClick={this.setAnimations.bind(this)}
                      style={this.state.style}>
                     <div></div>
-                    <div></div>
                     <div className="pie spinner"
                          style={this.state.style}></div>
                     <div className="pie filler"
@@ -37,8 +36,7 @@ class Clock extends Component {
         else
             return(
         <div onClick={this.setAnimations.bind(this)}>
-            <div className="get-ready" data-ix="get-ready-appear-disappear">get ready</div>
-            <div className="go" data-ix="get-ready-appear-disappear-2">GO!</div>
+            <div className="get-ready">get ready...</div>
         </div>);
 
     }
