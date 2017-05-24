@@ -13,8 +13,8 @@ body {
     display: none;
 }
 
-#SliderInSliderNav{
-    display: none;
+#SliderInSliderNav .w-slider-dot{
+    display: inline-block;
 }
 
 #countdown {
