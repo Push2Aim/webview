@@ -7,7 +7,7 @@ class Welcome extends Component {
 
             <div className="w-slide">
                 <div className="tut-slider w-slider" data-animation="cross" data-autoplay="1" data-delay="14000"
-                     data-disable-swipe="1" data-duration="500" data-easing="ease-in" data-infinite="1">
+                     data-disable-swipe="0" data-duration="500" data-easing="ease-in" data-infinite="1">
                     <div className="w-slider-mask">
                         <div className="w-slide">
                             <div className="content-parent welcome">
