@@ -36,7 +36,7 @@ class Clock extends Component {
         else
             return(
         <div onClick={this.setAnimations.bind(this)}>
-            <div className="get-ready">get ready...</div>
+            <div className="get-ready" data-ix="get-ready-disappear">get ready...</div>
         </div>);
 
     }
