@@ -1,4 +1,4 @@
-let path = "/webview";
+let path = process.env.NODE_ENV === "development" ? "" : "/webview";
 const config = [
     {
         "location": "home",
