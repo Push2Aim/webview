@@ -1,4 +1,4 @@
-/* Generated on: Wed Jun 14 2017 13:12:58 GMT+0000 (UTC) */
+/* Generated on: Thu May 18 2017 17:46:38 GMT+0000 (UTC) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -1669,6 +1669,13 @@ html.w-mod-js *[data-ix="timer-explanation"] {
 
 html.w-mod-js *[data-ix="slowly-blend-in"] {
   opacity: 0;
+}
+
+html.w-mod-js *[data-ix="trophy"] {
+  opacity: 0.5;
+  -webkit-transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5);
 }
 
 html.w-mod-js *[data-ix="reward-animation"] {
